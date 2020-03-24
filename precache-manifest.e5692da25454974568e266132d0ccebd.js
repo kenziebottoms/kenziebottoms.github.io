@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3c2642d6499b5c69d6024daae9d9819a",
+    "revision": "1956b048fce12118492d8297f36331e4",
     "url": "/index.html"
   },
   {
-    "revision": "1c733dab5d386fa15090",
-    "url": "/static/css/main.37325863.chunk.css"
+    "revision": "7aa43d940d5058ad38dc",
+    "url": "/static/css/main.0648171e.chunk.css"
   },
   {
-    "revision": "73e7c141cddcdfbc54c4",
-    "url": "/static/js/2.74c637fb.chunk.js"
+    "revision": "560918eebee0ccf4fad9",
+    "url": "/static/js/2.4ddcb793.chunk.js"
   },
   {
-    "revision": "1c733dab5d386fa15090",
-    "url": "/static/js/main.57c2f62f.chunk.js"
+    "revision": "7aa43d940d5058ad38dc",
+    "url": "/static/js/main.8b9aaedd.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -37,7 +37,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "7ccbaa8d9c7f2fadcc167ce2ed1dafe8",
-    "url": "/static/media/insta.7ccbaa8d.svg"
+    "url": "/static/media/instagram.7ccbaa8d.svg"
   },
   {
     "revision": "c610922511d46e6791fe5ae610197c70",
@@ -57,6 +57,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "01aa2406a87c30d84beafdd47b368489",
-    "url": "/static/media/vscode.01aa2406.png"
+    "url": "/static/media/visualstudiomarketplace.01aa2406.png"
+  },
+  {
+    "revision": "a17ad3fa1c9e4afe40307d2e5f5ee913",
+    "url": "/static/media/zazzle.a17ad3fa.svg"
   }
 ]);
