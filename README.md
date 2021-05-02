@@ -1,9 +1,9 @@
-![](https://img.shields.io/badge/updated-9/3/20-green.svg)
+![](https://img.shields.io/badge/updated-5/1/21-green.svg)
 ![](https://img.shields.io/badge/react-v16.13.1-61DAFB.svg)
 ![](https://img.shields.io/badge/npm-v6.14.8-C12026.svg)
 ![](https://img.shields.io/badge/node-v12.18.3-006E00.svg)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and then shaved down for Kenzie's personal use. They got rid of the service worker, the CSS, and the test class.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Local development
 
