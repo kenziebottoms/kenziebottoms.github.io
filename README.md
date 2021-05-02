@@ -23,9 +23,9 @@ git checkout gh-pages
 cp -r build/* .
 rm -rf build
 git checkout dev CNAME
-git branch -D master
-git checkout -b master
+git branch -D main
+git checkout -b main
 git add .
 git commit -m "deploy ${mm/dd/yy}"
-git push origin master --force
+git push origin main --force
 ```
