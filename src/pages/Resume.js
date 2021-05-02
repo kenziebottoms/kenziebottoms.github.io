@@ -18,9 +18,9 @@ const Resume = () =>
       startDate='June 2020'
       description={[
         'A dynamic dashboard for customer management using Redux and Redux-Saga.',
-        'A dynamic customer experienced based on a large array of persistent user-defined settings.',
-        'Automated testing for utility functions and sagas.',
-        'Documentation for a large legacy codebase.'
+        'A dynamic customer experience based on persistent user-defined settings.',
+        'Automated testing for components, sagas, and logic.',
+        'Establishment and documentation of new best practices for a large legacy codebase.'
       ]}
       tech={[
         'Git',
