@@ -29,8 +29,22 @@ const Resume = () =>
         'Redux-Saga',
         'Jest',
         'Webpack',
-        'CSS/SCSS',
-        'Azure DevOps'
+        'CSS/SCSS'
+      ]}
+    />
+    <Job
+      classes='lane-2 length-1'
+      company='Galactic Polymath'
+      jobTitle='React Developer'
+      startDate='November 2020'
+      description={[
+        'A directory of lesson plans that can be modularly assembled from sections.'
+      ]}
+      tech={[
+        'Git',
+        'React',
+        'Strapi',
+        'CSS/SCSS'
       ]}
     />
     <div className='year'>2021</div>
@@ -64,7 +78,6 @@ const Resume = () =>
         'JUnit'
       ]}
     />
-    <div className='placeholder' />
     <div className='year'>2020</div>
     <div className='placeholder' />
     <div className='year'>2019</div>
