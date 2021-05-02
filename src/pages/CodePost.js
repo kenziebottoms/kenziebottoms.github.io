@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment, useState,useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 import Page from '../components/Page'
@@ -13,80 +13,73 @@ import '../styles/pages/Post.scss'
 
 import restDB from '../services/restDB'
 
-class CodePost extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      post: null,
-      loading: true
-    }
+const CodePost = ({
+  location: {
+    pathname
   }
+}) => {
+  const [post, setPost] = useState(null)
 
-  componentDidMount() {
+  useEffect(() => {
     restDB
-      .codePost(this.props.location.pathname.split('/code/')[1])
-      .then((json) => {
-        this.setState({ post: json, loading: false })
-      })
-  }
+      .codePost(pathname.split('/code/')[1])
+      .then(setPost)
+  }, [])
 
-  render() {
-    return (
-      <Page id='post' className='code'>
-        <Link className='back' to='/code'>
-          <i className='material-icons'>chevron_left</i>
+  return (
+    <Page id='post' className='code'>
+      <Link className='back' to='/code'>
+        <i className='material-icons'>chevron_left</i>
           Back to code
-        </Link>
-        {this.state.loading ? 
-          <LoadingIcon />
-          : 
-          <React.Fragment>
-            {this.state.post.codepen ? 
-              <CodePen
-                title={this.state.post.title}
-                hash={this.state.post.codepen}
-              />
-              : 
-              <React.Fragment>
-                {this.state.post.script ? 
-                  <Script async={true} src={this.state.post.script} />
-                  : 
-                  <img
-                    src={this.state.post.image}
-                    alt={this.state.post.title + ' '}
-                  />
-                }
-              </React.Fragment>
-            }
-            <div className='caption'>
-              <h3>{this.state.post.title}</h3>
-              <DateTag date={this.state.post.date} />
-              <p
-                className='body'
-                dangerouslySetInnerHTML={{ __html: this.state.post.body }}
-              />
-              {this.state.post.link && 
+      </Link>
+      {post ?  
+        <Fragment>
+          {post.codepen ? 
+            <CodePen
+              title={post.title}
+              hash={post.codepen}
+            />
+            : 
+            <React.Fragment>
+              {post.script ? 
+                <Script async={true} src={post.script} />
+                : 
+                <img
+                  src={post.image}
+                  alt={post.title + ' '}
+                />
+              }
+            </React.Fragment>
+          }
+          <div className='caption'>
+            <h3>{post.title}</h3>
+            <DateTag date={post.date} />
+            <p
+              className='body'
+              dangerouslySetInnerHTML={{ __html: post.body }}
+            />
+            {post.link && 
                 <p className='link'>
                   <i className='material-icons'>link</i>
-                  <a href={this.state.post.link} target='blank'>
-                    {this.state.post.link}
+                  <a href={post.link} target='blank'>
+                    {post.link}
                   </a>
                 </p>
-              }
-              {this.state.post.github && 
+            }
+            {post.github && 
                 <p className='github'>
                   <img src={githubLogo} alt='GitHub' />
-                  <a href={this.state.post.github} target='blank'>
-                    {this.state.post.github}
+                  <a href={post.github} target='blank'>
+                    {post.github}
                   </a>
                 </p>
-              }
-            </div>
-          </React.Fragment>
-        }
-      </Page>
-    )
-  }
+            }
+          </div>
+        </Fragment> : 
+        <LoadingIcon />
+      }
+    </Page>
+  )
 }
 
 export default CodePost
