@@ -78,6 +78,7 @@ const Resume = () =>
         'JUnit'
       ]}
     />
+    <div className='placeholder lane-2'/>
     <div className='year'>2020</div>
     <div className='placeholder' />
     <div className='year'>2019</div>
