@@ -9,25 +9,52 @@ const Home = () =>
   <Page id='home'>
     <div id='bio' className='block wide'>
       <p>
-        Kenzie Bottoms is a feminist, artist, and developer born and raised in
-        Nashville. <Link to='/pronouns'>They</Link> are passionate about making
+        Kenzie Bottoms is a feminist, anti-racist, artist, and developer
+        based in Nashville, which is the original homeland of the{' '}
+        <a
+          href='http://www.naiatn.org/support/naia-circle-of-life-donations/'
+          target='_blank'
+          rel='no-referrer'
+        >
+          Cherokee, Chickasaw, Shawnee, and Yuchi tribal nations
+        </a>.{' '}
+        <Link to='/pronouns'>They</Link> are passionate about making
         all spaces, professional and otherwise, safe for women and nonbinary
         people, people of color, trans people, disabled people, and
-        neurodivergent people. They are a jammer for the{' '}
-        <a href='https://www.nashvillerollerderby.com/' target='blank'>
+        neurodivergent people.
+      </p>
+      <p>
+        They are a jammer for the{' '}
+        <a
+          href='https://www.nashvillerollerderby.com/' 
+          target='_blank'
+          rel='no-referrer'
+        >
           Nashville Roller Derby
         </a>{' '}
         Brawl Stars and skate under the name{' '}
-        <a href='https://en.wikipedia.org/wiki/Ellen_Ripley' target='blank'>
+        <a
+          href='https://en.wikipedia.org/wiki/Ellen_Ripley' 
+          target='_blank'
+          rel='no-referrer'
+        >
           Ellen R.I.P.ley
         </a>
         . They are a full-stack Node.js{' '}
-        <a href='http://nashvillesoftwareschool.com/' target='blank'>
+        <a
+          href='http://nashvillesoftwareschool.com/' 
+          target='_blank'
+          rel='no-referrer'
+        >
           Nashville Software School
         </a>{' '}
-        graduate, and they are currently nursing a legacy React codebase back to
-        health while building onto it with{' '}
-        <a href='https://www.razorsync.com/' target='blank'>
+        graduate, and they are currently clenaing up, maintaining and
+        building onto a large React Redux codebase with{' '}
+        <a
+          href='https://www.razorsync.com/' 
+          target='_blank'
+          rel='no-referrer'
+        >
           RazorSync
         </a>
         .
