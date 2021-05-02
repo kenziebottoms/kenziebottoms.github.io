@@ -36,7 +36,7 @@ class ArtPost extends React.Component {
           Back to art
         </Link>
         {this.state.loading ? 
-          <LoadingIcon active={this.state.loading} />
+          <LoadingIcon />
           : 
           <React.Fragment>
             <img src={this.state.post.image} alt={this.state.post.title} />

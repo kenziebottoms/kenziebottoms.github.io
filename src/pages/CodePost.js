@@ -38,7 +38,7 @@ class CodePost extends React.Component {
           Back to code
         </Link>
         {this.state.loading ? 
-          <LoadingIcon active={this.state.loading} />
+          <LoadingIcon />
           : 
           <React.Fragment>
             {this.state.post.codepen ? 

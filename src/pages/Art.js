@@ -7,7 +7,7 @@ import restDb from '../services/restDB'
 
 const Art = () => 
   <Page id='art'>
-    <TileGrid dataSource={restDb.allArtPosts} linkHead='art'>
+    <TileGrid fetchData={restDb.allArtPosts} linkHead='art'>
       <blockquote className='commissions'>
         Kenzie is always happy to take commissions. It can be{' '}
         <strong>anything</strong>: sticker designs, Coke can sculptures,
