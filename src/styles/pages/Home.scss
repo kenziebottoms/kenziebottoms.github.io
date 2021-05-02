@@ -10,6 +10,9 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        p {
+            margin: 0.5rem 0;
+        }
     }
 
     #bio {
@@ -42,7 +45,7 @@
             }
         }
     }
-    @media (min-width: $sm-md) {
+    @media (min-width: $md-lg) {
         height: 100%;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
