@@ -12,7 +12,7 @@ const Resume = () =>
     <h1 className='lane-1'>Full-time</h1>
     <h1 className='lane-2'>Freelance</h1>
     <Job
-      classes='lane-1 length-1'
+      classes='lane-1 length-2'
       company='Celero Commerce'
       jobTitle='React Developer'
       startDate='June 2020'
@@ -33,6 +33,7 @@ const Resume = () =>
         'Azure DevOps'
       ]}
     />
+    <div className='year'>2021</div>
     <Job
       classes='lane-1 length-4'
       company='FortyAU'
@@ -63,6 +64,7 @@ const Resume = () =>
         'JUnit'
       ]}
     />
+    <div className='placeholder' />
     <div className='year'>2020</div>
     <div className='placeholder' />
     <div className='year'>2019</div>
@@ -196,7 +198,7 @@ const Resume = () =>
     />
     <div className='year'>2016</div>
     <Job
-      classes='lane-1 length-1'
+      classes='lane-1 length-2'
       company='Acxiom Corporation'
       jobTitle='Digital Content Specialist Intern'
       startDate='July 2015'
@@ -210,7 +212,7 @@ const Resume = () =>
     />
     <div className='year'>2015</div>
     <Job
-      classes='lane-2 length-4'
+      classes='lane-2 length-5'
       company='Hereit.org'
       title='Freelance Developer'
       startDate='June 2013'
