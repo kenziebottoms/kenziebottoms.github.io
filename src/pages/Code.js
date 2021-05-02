@@ -7,7 +7,7 @@ import restDb from '../services/restDB'
 
 const Code = () => 
   <Page id='code'>
-    <TileGrid dataSource={restDb.allCodePosts()} linkHead='code' />
+    <TileGrid dataSource={restDb.allCodePosts} linkHead='code' />
   </Page>
 
 

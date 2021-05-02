@@ -36,7 +36,7 @@
     "react/jsx-max-props-per-line": ["error", { "maximum": 2 }],
     "react/jsx-no-target-blank": "off",
     "react/jsx-props-no-multi-spaces": "error",
-    "react/no-adjacent-inline-elements": "error",
+    "react/no-adjacent-inline-elements": "off",
     "react/no-multi-comp": "error",
     "react/no-unescaped-entities": ["error", { "forbid": [">", "<"] }],
     "react/prop-types": "off",

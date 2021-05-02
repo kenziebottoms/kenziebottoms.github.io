@@ -15,7 +15,7 @@ class TileGrid extends React.Component {
   }
 
   componentDidMount() {
-    this.props.dataSource.then(json =>
+    this.props.dataSource().then(json =>
       this.setState({ posts: json, loading: false })
     )
   }
