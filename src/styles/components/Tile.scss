@@ -9,6 +9,10 @@
     transition: 0.2s;
     filter: grayscale(0.8);
 
+    &.code {
+        background-position: top center;
+    }
+
     &:hover {
         filter: grayscale(0);
     }

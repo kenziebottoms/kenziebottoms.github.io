@@ -24,7 +24,7 @@ function formatDate(epoch) {
 
 const Tile = props => 
   <div
-    className='art tile'
+    className={`${props.linkHead} tile`}
     key={props.post._id}
     style={{ backgroundImage: `url(${props.post.thumbnail})` }}
   >
