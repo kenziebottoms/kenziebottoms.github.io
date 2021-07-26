@@ -48,7 +48,7 @@ const Home = () =>
         >
           Nashville Software School
         </a>{' '}
-        graduate, and they are currently clenaing up, maintaining and
+        graduate, and they are currently cleaning up, maintaining and
         building onto a large React Redux codebase with{' '}
         <a
           href='https://www.razorsync.com/' 
