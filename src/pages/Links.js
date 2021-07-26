@@ -41,11 +41,7 @@ const links = [
   },
   {
     name: 'Instagram',
-    href: 'https://www.instagram.com/kenziebottoms'
-  },
-  {
-    name: 'Twitter',
-    href: 'https://twitter.com/kenziebottoms'
+    href: 'https://www.instagram.com/kenzie.ink'
   },
   {
     name: 'LinkedIn',
@@ -70,10 +66,6 @@ const links = [
   {
     name: 'Society6',
     href: 'https://society6.com/claquesous'
-  },
-  {
-    name: 'Artists&Clients',
-    href: 'https://artistsnclients.com/people/kenziebottoms'
   }
 ]
 
