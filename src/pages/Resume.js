@@ -29,7 +29,8 @@ const Resume = () =>
         'Redux-Saga',
         'Jest',
         'Webpack',
-        'CSS/SCSS'
+        'CSS/SCSS',
+        'Azure DevOps'
       ]}
     />
     <Job
