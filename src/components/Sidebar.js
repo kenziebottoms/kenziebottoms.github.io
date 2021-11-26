@@ -10,33 +10,33 @@ const routes = [
   {
     name: 'home',
     path: '/',
-    icon: false
+    icon: false,
   },
   {
     name: 'art',
     path: '/art',
-    icon: 'color_lens'
+    icon: 'color_lens',
   },
   {
     name: 'code',
     path: '/code',
-    icon: 'code'
+    icon: 'code',
   },
   {
     name: 'resume',
     path: '/resume',
-    icon: 'assignment_ind'
+    icon: 'assignment_ind',
   },
   {
     name: 'feats',
     path: '/achievements',
-    icon: 'stars'
+    icon: 'stars',
   },
   {
     name: 'links',
     path: '/links',
-    icon: 'launch'
-  }
+    icon: 'launch',
+  },
 ]
 
 const Sidebar = () => {

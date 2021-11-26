@@ -15,7 +15,8 @@
   "rules": {
     "array-element-newline": ["error", { "multiline": true, "minItems": 3 }],
     "brace-style": ["error", "1tbs"],
-    "comma-dangle": ["error", "never"],
+    "comma-dangle": ["error", "always-multiline"],
+    "comma-spacing": ["error", { "before": false, "after": true }],
     "eqeqeq": "error",
     "indent": ["error", 2],
     "jsx-quotes": ["error", "prefer-single"],
@@ -36,6 +37,9 @@
     "react/jsx-max-props-per-line": ["error", { "maximum": 2 }],
     "react/jsx-no-target-blank": "off",
     "react/jsx-props-no-multi-spaces": "error",
+    "react/jsx-tag-spacing": ["error", {
+      "beforeSelfClosing": "always"
+    }],
     "react/no-adjacent-inline-elements": "off",
     "react/no-multi-comp": "error",
     "react/no-unescaped-entities": ["error", { "forbid": [">", "<"] }],

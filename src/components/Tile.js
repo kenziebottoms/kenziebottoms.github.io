@@ -17,14 +17,14 @@ function formatDate(epoch) {
     'September',
     'October',
     'November',
-    'December'
+    'December',
   ]
   let d = new Date(epoch)
   return `${months[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`
 }
 
 const Tile = ({
-  post
+  post,
 }) => {
   const { pathname } = useLocation()
   return (

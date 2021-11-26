@@ -27,46 +27,46 @@ let images = {
   artstation,
   society6,
   artistsclients,
-  zazzle
+  zazzle,
 }
 
 const links = [
   {
     name: 'Email',
-    href: 'mailto:kenziebottoms@gmail.com'
+    href: 'mailto:kenziebottoms@gmail.com',
   },
   {
     name: 'GitHub',
-    href: 'https://github.com/kenziebottoms'
+    href: 'https://github.com/kenziebottoms',
   },
   {
     name: 'Instagram',
-    href: 'https://www.instagram.com/kenzie.ink'
+    href: 'https://www.instagram.com/kenzie.ink',
   },
   {
     name: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/kenzie-bottoms'
+    href: 'https://www.linkedin.com/in/kenzie-bottoms',
   },
   {
     name: 'CodePen',
-    href: 'https://codepen.io/kenziebottoms/'
+    href: 'https://codepen.io/kenziebottoms/',
   },
   {
     name: 'Visual Studio Marketplace',
-    href: 'https://marketplace.visualstudio.com/publishers/kenziebottoms'
+    href: 'https://marketplace.visualstudio.com/publishers/kenziebottoms',
   },
   {
     name: 'ArtStation',
-    href: 'https://kenziebottoms.artstation.com/'
+    href: 'https://kenziebottoms.artstation.com/',
   },
   {
     name: 'Zazzle',
-    href: 'https://www.zazzle.com/store/judgmentalgiraffe'
+    href: 'https://www.zazzle.com/store/judgmentalgiraffe',
   },
   {
     name: 'Society6',
-    href: 'https://society6.com/claquesous'
-  }
+    href: 'https://society6.com/claquesous',
+  },
 ]
 
 const Links = () => 

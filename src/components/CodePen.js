@@ -15,7 +15,7 @@ const CodePen = props =>
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        padding: '1em'
+        padding: '1em',
       }}
     >
       <span>

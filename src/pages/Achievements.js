@@ -18,8 +18,8 @@ const feats = [
       >
         Jammer
       </a>,
-      ' in a derby bout.'
-    ]
+      ' in a derby bout.',
+    ],
   },
   {
     title: '1,667 Words A Day',
@@ -32,13 +32,13 @@ const feats = [
       >
         NaNoWriMo
       </a>,
-      '.'
-    ]
+      '.',
+    ],
   },
   {
     title: 'Color Coded',
     icon: 'brush',
-    description: 'Write your own color theme for a text editor.'
+    description: 'Write your own color theme for a text editor.',
   },
   {
     title: 'Hacker Mode',
@@ -51,13 +51,13 @@ const feats = [
       >
         Zsh
       </a>,
-      '.'
-    ]
+      '.',
+    ],
   },
   {
     title: 'Bulletproof',
     icon: 'security',
-    description: 'Write 100% test coverage for a unit of code.'
+    description: 'Write 100% test coverage for a unit of code.',
   },
   {
     title: 'Jam On',
@@ -70,13 +70,13 @@ const feats = [
       >
         one jam
       </a>,
-      '.'
-    ]
+      '.',
+    ],
   },
   {
     title: 'Finders Keepers',
     icon: 'healing',
-    description: 'Find a bug by writing automated tests.'
+    description: 'Find a bug by writing automated tests.',
   },
   {
     title: 'Goodwill Hunting',
@@ -89,13 +89,13 @@ const feats = [
       >
         Greatest International Scavenger Hunt
       </a>,
-      '.'
-    ]
+      '.',
+    ],
   },
   {
     title: 'Voila',
     icon: 'cast',
-    description: 'Demo a feature you built for a client.'
+    description: 'Demo a feature you built for a client.',
   },
   {
     title: 'It\'s Pronounced "Oiler"',
@@ -108,39 +108,39 @@ const feats = [
       >
         Project Euler
       </a>,
-      '.'
-    ]
+      '.',
+    ],
   },
   {
     title: 'Perfectionist',
     icon: 'access_time',
-    description: 'Spend more than 50 hours on a single piece of art.'
+    description: 'Spend more than 50 hours on a single piece of art.',
   },
   {
     title: 'Mother May I?',
     icon: 'merge_type',
-    description: 'Write 100 pull requests.'
+    description: 'Write 100 pull requests.',
   },
   {
     title: 'Sweat It Out',
     icon: 'forward_10',
-    description: 'Skate 10 miles in one go.'
+    description: 'Skate 10 miles in one go.',
   },
   {
     title: 'Buckle Up',
     icon: 'send',
-    description: 'Merge 100 branches into master.'
+    description: 'Merge 100 branches into master.',
   },
   {
     title: 'Pushover',
     icon: 'assignment_turned_in',
-    description: 'Approve 50 pull requests.'
+    description: 'Approve 50 pull requests.',
   },
   {
     title: 'Shrug Emoji',
     icon: 'tag_faces',
-    description: 'Create 30 Slack emojis.'
-  }
+    description: 'Create 30 Slack emojis.',
+  },
 ]
 
 const Achievements = () => 

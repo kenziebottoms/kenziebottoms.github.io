@@ -9,7 +9,7 @@ const TileGrid = ({
   id,
   fetchData,
   linkHead,
-  children
+  children,
 }) => {
   const [posts, setPosts] = useState([])
   

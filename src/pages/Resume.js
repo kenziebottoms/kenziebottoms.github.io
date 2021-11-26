@@ -21,7 +21,7 @@ const Resume = () =>
         'A customer management dashboard and scheduling using Redux and Redux-Saga.',
         'A dynamic customer experience based on many persistent user-defined settings.',
         'Automated testing for components and business logic.',
-        'Establishment and documentation of new best practices for a large legacy codebase.'
+        'Establishment and documentation of new best practices for a large legacy codebase.',
       ]}
       tech={[
         'Git',
@@ -31,7 +31,7 @@ const Resume = () =>
         'Jest',
         'Webpack',
         'CSS/SCSS',
-        'Azure DevOps'
+        'Azure DevOps',
       ]}
     />
     <Job
@@ -40,13 +40,13 @@ const Resume = () =>
       jobTitle='React Developer'
       startDate='November 2020'
       description={[
-        'A directory of lesson plans that can be modularly assembled from sections.'
+        'A directory of lesson plans that can be modularly assembled from sections.',
       ]}
       tech={[
         'Git',
         'React',
         'Strapi',
-        'CSS/SCSS'
+        'CSS/SCSS',
       ]}
     />
     <div className='year'>2021</div>
@@ -62,7 +62,7 @@ const Resume = () =>
         'Responsive, interactive custom WordPress themes using jQuery, Bootstrap, and SCSS, featuring secondary custom user dashboard functionality.',
         'Interactive, filterable map views on an Elixir/Phoenix app using Leaflet and React.',
         'AWS S3 file storage and SendGrid email integration with an Elixir/Phoenix app.',
-        'Automated testing, QA processes, and bug fixes for large legacy Java codebase.'
+        'Automated testing, QA processes, and bug fixes for large legacy Java codebase.',
       ]}
       tech={[
         'Git',
@@ -77,10 +77,10 @@ const Resume = () =>
         'SendGrid',
         'CSS/SCSS',
         'Java',
-        'JUnit'
+        'JUnit',
       ]}
     />
-    <div className='placeholder lane-2'/>
+    <div className='placeholder lane-2' />
     <div className='year'>2020</div>
     <div className='placeholder' />
     <div className='year'>2019</div>
@@ -99,8 +99,8 @@ const Resume = () =>
           >
             Roots.io
           </a>,
-          '.'
-        ]
+          '.',
+        ],
       ]}
       tech={['HTML',
         'CSS/SCSS',
@@ -121,7 +121,7 @@ const Resume = () =>
         'Single-page applications using JavaScript, jQuery, and AngularJS.',
         'Task management using Grunt with JSHint, Browserify, SCSS, etc.',
         'Server-side, test-driven Node development using Express, Chai, and Mocha.',
-        'Schema design, database organization, and API construction.'
+        'Schema design, database organization, and API construction.',
       ]}
       tech={[
         'Git',
@@ -134,7 +134,7 @@ const Resume = () =>
         'HTML/HAML',
         'Grunt/Gulp',
         'Mocha & Chai testing',
-        'MySQL'
+        'MySQL',
       ]}
     />
     <Job
@@ -144,7 +144,7 @@ const Resume = () =>
       startDate='January 2018'
       endDate='August 2018'
       description={[
-        'Design and implementation of custom archive pages.', 'Optimization, modification, and maintenance of a custom WordPress theme.'
+        'Design and implementation of custom archive pages.', 'Optimization, modification, and maintenance of a custom WordPress theme.',
       ]}
       tech={['HTML',
         'jQuery',
@@ -159,7 +159,7 @@ const Resume = () =>
       startDate='June 2017'
       endDate='September 2017'
       description={[
-        'Repair and optimization of existing WordPress sites.', 'Design and implementation of custom landing pages.'
+        'Repair and optimization of existing WordPress sites.', 'Design and implementation of custom landing pages.',
       ]}
       tech={['HTML',
         'jQuery',
@@ -179,7 +179,7 @@ const Resume = () =>
         'Organization and facilitation of inter-server migration of 100+ sites.',
         'Direct customer correspondence regarding site maintenance and updates.',
         'Maintenance, repair, and modification of custom WordPress themes.',
-        'Server organization and maintenance using Python scripting.'
+        'Server organization and maintenance using Python scripting.',
       ]}
       tech={[
         'Python',
@@ -189,7 +189,7 @@ const Resume = () =>
         'WordPress',
         'PHP',
         'ExpressionEngine',
-        'Git'
+        'Git',
       ]}
     />
     <div className='year'>2017</div>
@@ -200,7 +200,7 @@ const Resume = () =>
       startDate='January 2016'
       endDate='September 2016'
       description={[
-        'Maintenance, repair, and modification of custom WordPress themes.'
+        'Maintenance, repair, and modification of custom WordPress themes.',
       ]}
       tech={[
         'HTML',
@@ -209,7 +209,7 @@ const Resume = () =>
         'WordPress',
         'PHP',
         'ExpressionEngine',
-        'Git'
+        'Git',
       ]}
     />
     <div className='year'>2016</div>
@@ -220,7 +220,7 @@ const Resume = () =>
       startDate='July 2015'
       endDate='December 2015'
       description={[
-        'Construction, modification, and QA of HTML email marketing templates.'
+        'Construction, modification, and QA of HTML email marketing templates.',
       ]}
       tech={['HTML',
         'JavaScript',
@@ -237,7 +237,7 @@ const Resume = () =>
         'Custom HTML5 audio player using jQuery.',
         'Repair and expansion of user-facing and administrative features with PHP and MySQL.',
         'Implementation of a front-end redesign with CSS3.',
-        'Stripe e-commerce subscriptions and payments with jQuery/Ajax.'
+        'Stripe e-commerce subscriptions and payments with jQuery/Ajax.',
       ]}
       tech={[
         'HTML',
@@ -246,7 +246,7 @@ const Resume = () =>
         'MySQL',
         'JavaScript',
         'jQuery',
-        'Stripe e-Commerce'
+        'Stripe e-Commerce',
       ]}
     />
     <Job
@@ -256,7 +256,7 @@ const Resume = () =>
       startDate='September 2014'
       endDate='January 2015'
       description={[
-        'Construction, modification, and enhancement of student dashboard features.'
+        'Construction, modification, and enhancement of student dashboard features.',
       ]}
       tech={['C#']}
     />
