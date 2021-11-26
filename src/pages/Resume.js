@@ -11,15 +11,16 @@ const Resume = () =>
     <div id='green-border' />
     <h1 className='lane-1'>Full-time</h1>
     <h1 className='lane-2'>Freelance</h1>
+    <div className='year'>2022</div>
     <Job
-      classes='lane-1 length-2'
+      classes='lane-1 length-3'
       company='Celero Commerce'
       jobTitle='React Developer'
       startDate='June 2020'
       description={[
-        'A dynamic dashboard for customer management using Redux and Redux-Saga.',
-        'A dynamic customer experience based on persistent user-defined settings.',
-        'Automated testing for components, sagas, and logic.',
+        'A customer management dashboard and scheduling using Redux and Redux-Saga.',
+        'A dynamic customer experience based on many persistent user-defined settings.',
+        'Automated testing for components and business logic.',
         'Establishment and documentation of new best practices for a large legacy codebase.'
       ]}
       tech={[
@@ -34,7 +35,7 @@ const Resume = () =>
       ]}
     />
     <Job
-      classes='lane-2 length-1'
+      classes='lane-2 length-1 align-self-start'
       company='Galactic Polymath'
       jobTitle='React Developer'
       startDate='November 2020'
