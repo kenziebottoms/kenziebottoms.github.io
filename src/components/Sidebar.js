@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link, withRouter } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import { useLocation } from 'react-router'
 
 import Logo from '../elements/Logo'
 
@@ -38,12 +39,13 @@ const routes = [
   }
 ]
 
-const Sidebar = ({ location }) => {
+const Sidebar = () => {
+  const { pathname } = useLocation()
   const isActive = ({ icon, path }) =>{
     if (icon) {
-      return location.pathname.indexOf(path) >= 0
+      return pathname.indexOf(path) >= 0
     } else {
-      return location.pathname === '/' 
+      return pathname === '/' 
     }
   }
 
@@ -68,4 +70,4 @@ const Sidebar = ({ location }) => {
   )
 }
 
-export default withRouter(Sidebar)
+export default Sidebar

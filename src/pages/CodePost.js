@@ -1,4 +1,5 @@
-import React, { Fragment, useState,useEffect } from 'react'
+import React, { Fragment, useState, useEffect } from 'react'
+import { useParams } from 'react-router'
 import { Link } from 'react-router-dom'
 
 import Page from '../components/Page'
@@ -13,16 +14,13 @@ import '../styles/pages/Post.scss'
 
 import restDB from '../services/restDB'
 
-const CodePost = ({
-  location: {
-    pathname
-  }
-}) => {
-  const [post, setPost] = useState(null)
+const CodePost = () => {
+  const { hash } = useParams()
+  const [post, setPost] = useState()
 
   useEffect(() => {
     restDB
-      .codePost(pathname.split('/code/')[1])
+      .codePost(hash)
       .then(setPost)
   }, [])
 

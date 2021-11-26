@@ -1,8 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-/*eslint { 'max-len': 0 }*/
-
+/* eslint-disable max-len */
 const svg = 
   <svg
     xmlns='http://www.w3.org/2000/svg' height='34'
@@ -21,6 +20,9 @@ const svg =
   </svg>
 
 
-const Logo = ({ link }) => link ? <Link to='/'>{svg}</Link> : svg
+const Logo = ({ link }) =>
+  link ?
+    <Link to='/'>{svg}</Link> :
+    svg
 
 export default Logo

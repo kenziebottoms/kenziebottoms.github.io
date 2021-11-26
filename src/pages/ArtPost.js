@@ -1,4 +1,5 @@
-import React, { Fragment,useEffect, useState } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
+import { useParams } from 'react-router'
 import { Link } from 'react-router-dom'
 
 import Page from '../components/Page'
@@ -9,15 +10,12 @@ import '../styles/pages/Post.scss'
 
 import restDB from '../services/restDB'
 
-const ArtPost = ({
-  location: {
-    pathname
-  }
-}) => {
+const ArtPost = () => {
+  const { hash } = useParams()
   const [post, setPost] = useState(null)
   useEffect(() =>{
     restDB
-      .artPost(pathname.split('/art/')[1])
+      .artPost(hash)
       .then(json => {
         // make all links open in new tabs
         json.body = json.body

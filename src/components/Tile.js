@@ -1,4 +1,5 @@
 import React from 'react'
+import { useLocation } from 'react-router'
 import { Link } from 'react-router-dom'
 
 import '../styles/components/Tile.scss'
@@ -22,19 +23,25 @@ function formatDate(epoch) {
   return `${months[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`
 }
 
-const Tile = props => 
-  <div
-    className={`${props.linkHead} tile`}
-    key={props.post._id}
-    style={{ backgroundImage: `url(${props.post.thumbnail})` }}
-  >
-    <Link to={props.linkHead + '/' + props.post._id}>
-      <div className='overlay'>
-        <h3>{props.post.title}</h3>
-        <div className='date'>{formatDate(props.post.date * 1000)}</div>
-      </div>
-    </Link>
-  </div>
+const Tile = ({
+  post
+}) => {
+  const { pathname } = useLocation()
+  return (
+    <div
+      className='tile'
+      key={post._id}
+      style={{ backgroundImage: `url(${post.thumbnail})` }}
+    >
+      <Link to={pathname + '/' + post._id}>
+        <div className='overlay'>
+          <h3>{post.title}</h3>
+          <div className='date'>{formatDate(post.date * 1000)}</div>
+        </div>
+      </Link>
+    </div>
+  )
+}
 
 
 export default Tile

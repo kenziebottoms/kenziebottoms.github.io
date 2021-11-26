@@ -9,9 +9,6 @@
     transition: 0.2s;
     filter: grayscale(0.8);
 
-    &.code {
-        background-position: top center;
-    }
 
     &:hover {
         filter: grayscale(0);
@@ -26,5 +23,11 @@
         height: 100%;
         box-sizing: border-box;
         background: rgba($black, 0.6);
+    }
+}
+
+.tileGrid.code {
+    .tile {
+        background-position: top center;
     }
 }

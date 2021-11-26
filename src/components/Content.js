@@ -1,5 +1,5 @@
 import React from 'react'
-import { Switch, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 
 import '../styles/components/Content.scss'
 
@@ -14,34 +14,29 @@ import Achievements from '../pages/Achievements'
 import Links from '../pages/Links'
 import JsDocTypes from '../pages/JsDocTypes'
 
-class Content extends React.Component {
-  render() {
-    return (
-      <section id='content'>
-        <Switch>
-          <Route
-            exact path='/'
-            component={Home}
-          />
-          <Route
-            exact path='/art'
-            component={Art}
-          />
-          <Route path='/art' component={ArtPost} />
-          <Route
-            exact path='/code'
-            component={Code}
-          />
-          <Route path='/code' component={CodePost} />
-          <Route path='/resume' component={Resume} />
-          <Route path='/achievements' component={Achievements} />
-          <Route path='/links' component={Links} />
-          <Route path='/pronouns' component={Pronouns} />
-          <Route path='/cheatsheet/jsdoc-types' component={JsDocTypes} />
-        </Switch>
-      </section>
-    )
-  }
-}
+const Content = () => 
+  <section id='content'>
+    <Routes>
+      <Route
+        exact path='/'
+        element={<Home />}
+      />
+      <Route
+        exact path='/art'
+        element={<Art />}
+      />
+      <Route path='/art/:hash' element={<ArtPost />} />
+      <Route
+        exact path='/code'
+        element={<Code />}
+      />
+      <Route path='/code/:hash' element={<CodePost />} />
+      <Route path='/resume' element={<Resume />} />
+      <Route path='/achievements' element={<Achievements />} />
+      <Route path='/links' element={<Links />} />
+      <Route path='/pronouns' element={<Pronouns />} />
+      <Route path='/cheatsheets/jsdoc' element={<JsDocTypes />} />
+    </Routes>
+  </section>
 
 export default Content

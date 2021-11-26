@@ -18,16 +18,13 @@ const TileGrid = ({
   }, [])
 
   return (
-    <div id={id} className='tileGrid'>
+    <div id={id} className={linkHead + ' tileGrid'}>
       {posts.length === 0 ?
         <LoadingIcon /> :
         <Fragment>
           {children}
           {posts.map(post => 
-            <Tile
-              key={post._id} post={post}
-              linkHead={linkHead}
-            />
+            <Tile key={post._id} post={post} />
           )}
         </Fragment>}
     </div>
