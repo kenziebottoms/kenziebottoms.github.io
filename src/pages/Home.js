@@ -24,7 +24,7 @@ const Home = () =>
         neurodivergent people.
       </p>
       <p>
-        They are a jammer for the{' '}
+        They are a jammer with{' '}
         <a
           href='https://www.nashvillerollerderby.com/' 
           target='_blank'
@@ -32,15 +32,15 @@ const Home = () =>
         >
           Nashville Roller Derby
         </a>{' '}
-        Brawl Stars and skate under the name{' '}
+        and skate under the name{' '}
         <a
           href='https://en.wikipedia.org/wiki/Ellen_Ripley' 
           target='_blank'
           rel='no-referrer'
         >
           Ellen R.I.P.ley
-        </a>
-        . They are a full-stack Node.js{' '}
+        </a>{' '}
+        (Rip for short). They are a full-stack Node.js{' '}
         <a
           href='http://nashvillesoftwareschool.com/' 
           target='_blank'
@@ -48,14 +48,14 @@ const Home = () =>
         >
           Nashville Software School
         </a>{' '}
-        graduate, and they are currently cleaning up, maintaining and
-        building onto a large React Redux codebase with{' '}
+        graduate, and they are currently helping schools support their teachers
+        and students at{' '}
         <a
-          href='https://www.razorsync.com/' 
+          href='https://www.everydaylabs.com/'
           target='_blank'
           rel='no-referrer'
         >
-          RazorSync
+          EveryDay Labs
         </a>
         .
       </p>

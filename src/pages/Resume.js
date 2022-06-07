@@ -6,11 +6,47 @@ import '../styles/pages/Resume.scss'
 
 /*eslint { 'max-len': 0 }*/
 
-const Resume = () => 
+const Resume = () =>
   <Page id='resume'>
     <div id='green-border' />
     <h1 className='lane-1'>Full-time</h1>
     <h1 className='lane-2'>Freelance</h1>
+    <Job
+      classes='lane-1 length-1'
+      company='EveryDay Labs'
+      jobTitle='React Developer'
+      startDate='Feb 2022'
+      description={[
+        'A data visualization dashboard and search tool using GraphQL and Apollo.', 'Strategy and documentation to standardize the front-end development of an application suite.',
+      ]}
+      tech={[
+        'Git',
+        'React',
+        'GraphQL & Apollo',
+        'Jest',
+        'Webpack',
+        'SCSS',
+        'AWS',
+        'Terraform',
+        'CircleCI',
+      ]}
+    />
+    <Job
+      classes='lane-2 length-4 align-self-center'
+      company='Galactic Polymath'
+      jobTitle='React Developer'
+      startDate='November 2020'
+      description={[
+        'A directory of lesson plans that can be modularly assembled from sections.',
+      ]}
+      tech={[
+        'Git',
+        'React',
+        'Next.js',
+        'Strapi',
+        'CSS/SCSS',
+      ]}
+    />
     <div className='year'>2022</div>
     <Job
       classes='lane-1 length-3'
@@ -32,21 +68,6 @@ const Resume = () =>
         'Webpack',
         'CSS/SCSS',
         'Azure DevOps',
-      ]}
-    />
-    <Job
-      classes='lane-2 length-1 align-self-start'
-      company='Galactic Polymath'
-      jobTitle='React Developer'
-      startDate='November 2020'
-      description={[
-        'A directory of lesson plans that can be modularly assembled from sections.',
-      ]}
-      tech={[
-        'Git',
-        'React',
-        'Strapi',
-        'CSS/SCSS',
       ]}
     />
     <div className='year'>2021</div>
@@ -102,11 +123,13 @@ const Resume = () =>
           '.',
         ],
       ]}
-      tech={['HTML',
+      tech={[
+        'HTML',
         'CSS/SCSS',
         'jQuery',
         'WordPress',
-        'PHP']}
+        'PHP',
+      ]}
     />
     <Job
       classes='lane-1 length-1'
