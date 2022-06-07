@@ -1,7 +1,7 @@
-![](https://img.shields.io/badge/updated-11/26/21-green.svg)
+![](https://img.shields.io/badge/updated-6/6/22-green.svg)
 ![](https://img.shields.io/badge/react-v17.0.2-61DAFB.svg)
-![](https://img.shields.io/badge/npm-v7.21.0-C12026.svg)
-![](https://img.shields.io/badge/node-v12.18.3-006E00.svg)
+![](https://img.shields.io/badge/npm-v8.11.0-C12026.svg)
+![](https://img.shields.io/badge/node-v16.15.1-006E00.svg)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
