@@ -9,8 +9,8 @@ const Home = () =>
   <Page id='home'>
     <div id='bio' className='block wide'>
       <p>
-        Kenzie Bottoms is a feminist, anti-racist, artist, and developer
-        based in Nashville, which is the original homeland of the{' '}
+        Kenzie Bottoms (AKA Rip) is a feminist, anti-racist, artist, and
+        developer based in Nashville, the original homeland of the{' '}
         <a
           href='http://www.naiatn.org/support/naia-circle-of-life-donations/'
           target='_blank'
@@ -18,13 +18,13 @@ const Home = () =>
         >
           Cherokee, Chickasaw, Shawnee, and Yuchi tribal nations
         </a>.{' '}
-        <Link to='/pronouns'>They</Link> are passionate about making
-        all spaces, professional and otherwise, safe for women and nonbinary
-        people, people of color, trans people, disabled people, and
-        neurodivergent people.
+        <Link to='/pronouns'>Their pronouns are he/they</Link> and they are
+        passionate about making all spaces, professional and otherwise, safe
+        and accessible for women, people of color, trans and nonbinary people,
+        disabled people, and neurodivergent people.
       </p>
       <p>
-        They are a jammer with{' '}
+        They jam with{' '}
         <a
           href='https://www.nashvillerollerderby.com/' 
           target='_blank'
@@ -32,13 +32,13 @@ const Home = () =>
         >
           Nashville Roller Derby
         </a>{' '}
-        and skate under the name{' '}
+        under the name{' '}
         <a
           href='https://en.wikipedia.org/wiki/Ellen_Ripley' 
           target='_blank'
           rel='no-referrer'
         >
-          Ellen R.I.P.ley
+          R.I.P.ley
         </a>{' '}
         (Rip for short). They are a full-stack Node.js{' '}
         <a
