@@ -10,6 +10,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ```bash
 git clone git@github.com:kenziebottoms/kenziebottoms.github.io.git
 cd kenziebottoms.github.io.git
+nvm use
 npm install
 npm start
 ```
