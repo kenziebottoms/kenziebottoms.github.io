@@ -10,11 +10,12 @@ const feats = [
     title: 'MVJ',
     icon: 'military_tech',
     description: [
-      'Be awarded Most Valuable ',
+      'Win Most Valuable ',
       <a
         key={1}
         href='https://en.wikipedia.org/wiki/Roller_derby#Basics_of_play'
-        target='blank'
+        target='_blank' 
+        rel='noopener noreferrer'
       >
         Jammer
       </a>,
@@ -27,8 +28,10 @@ const feats = [
     description: [
       'Beat ',
       <a
-        key={1} href='https://nanowrimo.org/about'
-        target='blank'
+        key={1}
+        href='https://nanowrimo.org/about'
+        target='_blank' 
+        rel='noopener noreferrer'
       >
         NaNoWriMo
       </a>,
@@ -38,7 +41,7 @@ const feats = [
   {
     title: 'Color Coded',
     icon: 'brush',
-    description: 'Write your own color theme for a text editor.',
+    description: 'Write a custom color theme for a text editor.',
   },
   {
     title: 'Hacker Mode',
@@ -46,13 +49,31 @@ const feats = [
     description: [
       'Write 20 aliases for ',
       <a
-        key={1} href='https://ohmyz.sh/'
-        target='blank'
+        key={1}
+        href='https://ohmyz.sh/'
+        target='_blank'
+        rel='noopener noreferrer'
       >
         Zsh
       </a>,
       '.',
     ],
+  },
+  {
+    title: 'Bug Box',
+    icon: 'yard',
+    description: [
+      'Build a ',
+      <a
+        key={1}
+        href='https://en.wikipedia.org/wiki/Bioactive_terrarium'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
+        bioactive enclosure
+      </a>,
+      ' for a pet.'
+    ]
   },
   {
     title: 'Bulletproof',
@@ -65,8 +86,10 @@ const feats = [
     description: [
       'Score 20 points in ',
       <a
-        key={1} href='https://en.wikipedia.org/wiki/Roller_derby#Jams'
-        target='blank'
+        key={1}
+        href='https://en.wikipedia.org/wiki/Roller_derby#Jams'
+        target='_blank'
+        rel='noopener noreferrer'
       >
         one jam
       </a>,
@@ -84,8 +107,10 @@ const feats = [
     description: [
       'Earn 5000 points in the ',
       <a
-        key={1} target='blank'
+        key={1}
         href='https://www.gish.com/'
+        target='_blank' 
+        rel='noopener noreferrer'
       >
         Greatest International Scavenger Hunt
       </a>,
@@ -103,8 +128,10 @@ const feats = [
     description: [
       'Solve 25 problems on ',
       <a
-        key={1} href='https://projecteuler.net/about'
-        target='blank'
+        key={1} 
+        href='https://projecteuler.net/about'
+        target='_blank' 
+        rel='noopener noreferrer'
       >
         Project Euler
       </a>,
