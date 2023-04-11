@@ -6,7 +6,6 @@ import '../styles/pages/Links.scss'
 
 import email from '../img/email.svg'
 import github from '../img/github.svg'
-import instagram from '../img/instagram.svg'
 import twitter from '../img/twitter.svg'
 import linkedin from '../img/linkedin.svg'
 import codepen from '../img/codepen.svg'
@@ -19,7 +18,6 @@ import zazzle from '../img/zazzle.svg'
 let images = {
   email,
   github,
-  instagram,
   twitter,
   linkedin,
   codepen,
@@ -38,10 +36,6 @@ const links = [
   {
     name: 'GitHub',
     href: 'https://github.com/kenziebottoms',
-  },
-  {
-    name: 'Instagram',
-    href: 'https://www.instagram.com/kenzie.ink',
   },
   {
     name: 'LinkedIn',
