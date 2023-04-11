@@ -11,13 +11,16 @@ const Resume = () =>
     <div id='green-border' />
     <h1 className='lane-1'>Full-time</h1>
     <h1 className='lane-2'>Freelance</h1>
+    <div className='year'>2023</div>
     <Job
-      classes='lane-1 length-1'
+      classes='lane-1 length-2'
       company='EveryDay Labs'
       jobTitle='React Developer'
-      startDate='Feb 2022'
+      startDate='February 2022'
       description={[
-        'A data visualization dashboard and search tool using GraphQL and Apollo.', 'Strategy and documentation to standardize the front-end development of an application suite.',
+        'An accessible data visualization dashboard and search tool using GraphQL and Apollo.', 
+        'Strategy and documentation to standardize the front-end development of an application suite.',
+        'Internal tooling built with Appsmith.'
       ]}
       tech={[
         'Git',
@@ -25,26 +28,27 @@ const Resume = () =>
         'GraphQL & Apollo',
         'Jest',
         'Webpack',
-        'SCSS',
+        'Tailwind',
         'AWS',
         'Terraform',
         'CircleCI',
+        'Appsmith'
       ]}
     />
     <Job
-      classes='lane-2 length-4 align-self-center'
+      classes='lane-2 length-5 align-self-center'
       company='Galactic Polymath'
       jobTitle='React Developer'
       startDate='November 2020'
       description={[
-        'A directory of lesson plans that can be modularly assembled from sections.',
+        'A directory of modular lesson plans.', 'A responsive, SEO-supportive Next.js website.'
       ]}
       tech={[
         'Git',
         'React',
         'Next.js',
         'Strapi',
-        'CSS/SCSS',
+        'SCSS',
       ]}
     />
     <div className='year'>2022</div>
@@ -53,6 +57,7 @@ const Resume = () =>
       company='Celero Commerce'
       jobTitle='React Developer'
       startDate='June 2020'
+      endDate='February 2022'
       description={[
         'A customer management dashboard and scheduling using Redux and Redux-Saga.',
         'A dynamic customer experience based on many persistent user-defined settings.',
@@ -66,7 +71,7 @@ const Resume = () =>
         'Redux-Saga',
         'Jest',
         'Webpack',
-        'CSS/SCSS',
+        'SCSS',
         'Azure DevOps',
       ]}
     />
@@ -96,7 +101,7 @@ const Resume = () =>
         'Leaflet',
         'AWS S3',
         'SendGrid',
-        'CSS/SCSS',
+        'SCSS',
         'Java',
         'JUnit',
       ]}
@@ -125,7 +130,7 @@ const Resume = () =>
       ]}
       tech={[
         'HTML',
-        'CSS/SCSS',
+        'SCSS',
         'jQuery',
         'WordPress',
         'PHP',
@@ -153,7 +158,7 @@ const Resume = () =>
         'NPM',
         'Node.js & Express',
         'AngularJS',
-        'CSS/SCSS',
+        'SCSS',
         'HTML/HAML',
         'Grunt/Gulp',
         'Mocha & Chai testing',
@@ -186,7 +191,7 @@ const Resume = () =>
       ]}
       tech={['HTML',
         'jQuery',
-        'CSS/SCSS',
+        'SCSS',
         'WordPress',
         'PHP']}
     />
@@ -208,7 +213,7 @@ const Resume = () =>
         'Python',
         'HTML',
         'jQuery',
-        'CSS/SCSS',
+        'SCSS',
         'WordPress',
         'PHP',
         'ExpressionEngine',
@@ -228,7 +233,7 @@ const Resume = () =>
       tech={[
         'HTML',
         'jQuery',
-        'CSS/SCSS',
+        'SCSS',
         'WordPress',
         'PHP',
         'ExpressionEngine',

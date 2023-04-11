@@ -82,6 +82,9 @@
             &.length-5 {
                 grid-row: span 5;
             }
+            &.length-6 {
+                grid-row: span 6;
+            }
         }
         .align-self-start {
             align-self: start;
