@@ -50,3 +50,9 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
+
+.dark #home {
+    i {
+        color: $bg;
+    }
+}

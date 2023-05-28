@@ -87,6 +87,9 @@ img {
     padding: 1rem;
     background: $bg-hhl;
 }
+.dark .block {
+    background: $black;
+}
 
 a {
     color: $green-ll;
@@ -95,6 +98,13 @@ a {
     &:hover {
         text-decoration: none;
         color: $green;
+    }
+}
+.dark a {
+    color: $green;
+
+    &:hover {
+        color: $green-ll;
     }
 }
 
