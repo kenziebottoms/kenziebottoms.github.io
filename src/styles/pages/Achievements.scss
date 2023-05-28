@@ -54,3 +54,14 @@
         }
     }
 }
+
+.dark #achievements {
+    .achievement {
+        background: $black;
+
+        i {
+            background: $green;
+            color: $black;
+        }
+    }
+}

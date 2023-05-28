@@ -55,7 +55,7 @@
             display: block;
             background: $green;
             grid-column-start: 2;
-            grid-row: 2 / 21;
+            grid-row: 2 / 23;
         }
         h1 {
             display: block;
@@ -98,5 +98,22 @@
         .placeholder {
             height: 10rem;
         }
+    }
+}
+
+.dark #resume {
+    article {
+        background: $black;
+
+        h4 {
+            color: rgba($white, 0.5);
+        }
+        
+        .tech .tag {
+            background: rgba($gray, 0.6);
+        }
+    }
+    .year {
+        color: rgba($white, 0.5);
     }
 }
