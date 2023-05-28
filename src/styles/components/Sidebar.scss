@@ -12,21 +12,6 @@
         }
     }
 
-    #dark {
-        a, button {
-            padding-top: 1rem;
-            background: $green;
-
-            &:hover {
-                color: $green;
-
-                path:last-child {
-                    fill: $green;
-                }
-            }
-        }
-    }
-
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -105,6 +90,74 @@
                 cursor: pointer;
                 @media (min-width: $md-lg) {
                     opacity: 0;
+                }
+            }
+        }
+    }
+}
+
+.dark #sidebar {
+    background: $black;
+
+    li {
+        a, button {
+            color: $white;
+
+            &[href='/'] {
+                background: $green;
+                svg {
+                    path[fill='#000'] {
+                        fill: $black;
+                    }
+                }
+
+                &:hover,
+                &.active {
+                    background: $green;
+                    color: $black;
+
+                    svg {
+                        path[fill='#000'] {
+                            fill: $green;
+                        }
+                    }
+                }
+            }
+
+            &:hover,
+            &.active {
+                background: $white;
+                color: $black;
+            }
+
+            &.dark {
+                background: $white;
+                color: $black;
+                svg {
+                    path[fill='#000'] {
+                        fill: $white;
+                    }
+                }
+                &[href='/'] {
+                    background: $black;
+                    svg {
+                        path[fill='#000'] {
+                            fill: $green;
+                        }
+                    }
+                }
+
+                &:hover,
+                &.active {
+                    background: $white;
+                    &[href='/'] {
+                        background: $green;
+                        svg {
+                            path[fill='#000'] {
+                                fill: $black;
+                            }
+                        }
+                    }
                 }
             }
         }
