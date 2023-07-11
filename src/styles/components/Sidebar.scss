@@ -4,28 +4,10 @@
 #sidebar {
     background: $white;
     height: 100vh;
-    transition: 0.5s;
 
     &:hover {
         label {
             opacity: 1;
-        }
-    }
-
-    #logo {
-        a {
-            padding-top: 1rem;
-            background: $green;
-            color: $black;
-
-            &:hover {
-                background: $black;
-                color: $green;
-
-                path:last-child {
-                    fill: $green;
-                }
-            }
         }
     }
 
@@ -38,13 +20,18 @@
         padding: 0;
         margin: 0;
 
-        a {
-            padding: 0.75rem 0.7rem 0.5rem 0.7rem;
+        a, button {
+            background: transparent;
+            border: 0;
+            padding: 1rem 0.75rem;
             color: $black;
             display: block;
             text-align: center;
             word-wrap: wrap;
             text-decoration: none;
+            font: inherit;
+            line-height: 1.15;
+            cursor: pointer;
 
             &[href='/'] {
                 background: $green;
@@ -73,6 +60,21 @@
                 color: $bg;
             }
 
+            &.dark {
+                background: $black;
+                color: $white;
+                svg {
+                    path[fill='#000'] {
+                        fill: $white;
+                    }
+                }
+
+                &:hover,
+                &.active {
+                    background: $black;
+                }
+            }
+
             i {
                 font-size: 1.75rem;
                 display: block;
@@ -81,12 +83,80 @@
             label {
                 display: block;
                 font-size: 0.9rem;
-                margin-top: -0.1rem;
+                margin-top: 0.1rem;
                 transition: 0.2s;
                 font-weight: 300;
                 cursor: pointer;
                 @media (min-width: $md-lg) {
                     opacity: 0;
+                }
+            }
+        }
+    }
+}
+
+.dark #sidebar {
+    background: $black;
+
+    li {
+        a, button {
+            color: $white;
+
+            &[href='/'] {
+                background: $green;
+                svg {
+                    path[fill='#000'] {
+                        fill: $black;
+                    }
+                }
+
+                &:hover,
+                &.active {
+                    background: $green;
+                    color: $black;
+
+                    svg {
+                        path[fill='#000'] {
+                            fill: $green;
+                        }
+                    }
+                }
+            }
+
+            &:hover,
+            &.active {
+                background: $white;
+                color: $black;
+            }
+
+            &.dark {
+                background: $white;
+                color: $black;
+                svg {
+                    path[fill='#000'] {
+                        fill: $white;
+                    }
+                }
+                &[href='/'] {
+                    background: $black;
+                    svg {
+                        path[fill='#000'] {
+                            fill: $green;
+                        }
+                    }
+                }
+
+                &:hover,
+                &.active {
+                    background: $white;
+                    &[href='/'] {
+                        background: $green;
+                        svg {
+                            path[fill='#000'] {
+                                fill: $black;
+                            }
+                        }
+                    }
                 }
             }
         }

@@ -11,6 +11,7 @@ const routes = [
     name: 'home',
     path: '/',
     icon: false,
+    dark: true,
   },
   {
     name: 'art',
@@ -39,7 +40,10 @@ const routes = [
   },
 ]
 
-const Sidebar = () => {
+const Sidebar = ({
+  darkMode,
+  setDarkMode,
+}) => {
   const { pathname } = useLocation()
   const isActive = ({ icon, path }) =>{
     if (icon) {
@@ -55,7 +59,8 @@ const Sidebar = () => {
         <li key={route.name}>
           <Link
             to={route.path}
-            className={isActive(route) ? 'active' : '' }
+            className={`${route.dark ? 'dark' : ''}\
+            ${isActive(route) ? 'active' : ''}`}
           >
             {route.icon ? 
               <i className='material-icons'>{route.icon}</i>
@@ -66,6 +71,15 @@ const Sidebar = () => {
           </Link>
         </li>
       )}
+      <li>
+        <button
+          className='dark end'
+          onClick={() => setDarkMode(oldMode => !oldMode)}
+        >
+          <i className='material-icons'>dark_mode</i>
+          <label>{darkMode ? 'light' : 'dark'} mode</label>
+        </button>
+      </li>
     </ul>
   )
 }
