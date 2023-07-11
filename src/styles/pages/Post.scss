@@ -98,3 +98,11 @@
         margin: 0;
     }
 }
+
+.dark #post {
+    .caption {
+        .date, .material-icons, img {
+            filter: invert(100%);
+        }
+    }
+}
