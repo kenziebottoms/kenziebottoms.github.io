@@ -9,7 +9,7 @@ const Home = () =>
   <Page id='home'>
     <div id='bio' className='block wide'>
       <p>
-        Kenzie Bottoms (AKA Rip) is a feminist, anti-racist, artist, and
+        Kenzie Bottoms is a feminist, anti-racist, artist, and
         developer based in Nashville, the original homeland of the{' '}
         <a
           href='http://www.naiatn.org/support/naia-circle-of-life-donations/'
