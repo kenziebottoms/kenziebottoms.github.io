@@ -74,3 +74,11 @@
         }
     }
 }
+
+.dark #links {
+    .block {
+        img {
+            filter: invert(100%);
+        }
+    }
+}
