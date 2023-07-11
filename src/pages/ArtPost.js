@@ -3,6 +3,7 @@ import { useParams } from 'react-router'
 import { Link } from 'react-router-dom'
 
 import Page from '../components/Page'
+import SanitizedHtml from '../components/SanitizedHtml'
 import LoadingIcon from '../elements/LoadingIcon'
 import DateTag from '../elements/DateTag'
 
@@ -36,7 +37,7 @@ const ArtPost = () => {
           <div className='caption'>
             <h3>{post.title}</h3>
             <DateTag date={post.date} />
-            <p dangerouslySetInnerHTML={{ __html: post.body }} />
+            <SanitizedHtml html={post.body} />
           </div>
         </Fragment> :
         <LoadingIcon />}

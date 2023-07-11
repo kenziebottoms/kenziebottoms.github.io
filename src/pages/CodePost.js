@@ -6,6 +6,7 @@ import Page from '../components/Page'
 import LoadingIcon from '../elements/LoadingIcon'
 import DateTag from '../elements/DateTag'
 import CodePen from '../components/CodePen'
+import SanitizedHtml from '../components/SanitizedHtml'
 import Script from '../elements/Script'
 
 import githubLogo from '../img/github.svg'
@@ -52,10 +53,9 @@ const CodePost = () => {
           <div className='caption'>
             <h3>{post.title}</h3>
             <DateTag date={post.date} />
-            <p
-              className='body'
-              dangerouslySetInnerHTML={{ __html: post.body }}
-            />
+            <div className='body'>
+              <SanitizedHtml html={post.body} />
+            </div>
             {post.link && 
                 <p className='link'>
                   <i className='material-icons'>link</i>
