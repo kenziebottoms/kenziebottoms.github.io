@@ -25,15 +25,6 @@
         margin-right: 1rem;
     }
 
-    #links {
-        grid-column: 3 / span 2;
-        grid-row: 1 / span 3;
-
-        a {
-            display: inline;
-        }
-    }
-
     @media (min-width: $sm-md) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -49,29 +40,14 @@
             margin-right: 0;
             margin-bottom: 1rem;
         }
-
-        #links {
-            grid-column: span 2;
-            grid-row: 3;
-        }
     }
 
     @media (min-width: $md-lg) {
         grid-template-columns: repeat(3, 1fr);
-
-        #links {
-            grid-column: 2 / span 2;
-            grid-row: 1 / span 3;
-        }
     }
 
     @media (min-width: $lg-xl) {
         grid-template-columns: repeat(4, 1fr);
-
-        #links {
-            grid-column: 3 / span 2;
-            grid-row: 1 / span 3;
-        }
     }
 }
 
