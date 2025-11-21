@@ -9,7 +9,7 @@ const Home = () =>
   <Page id='home'>
     <div id='bio' className='block wide'>
       <p>
-        Kenzie Bottoms is an artist and developer based in Nashville,
+        Kenzie Bottoms is an artist and web developer based in Nashville,
         the original homeland of the{' '}
         <a
           href='https://naiatn.org/'
