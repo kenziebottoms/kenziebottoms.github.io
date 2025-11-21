@@ -23,6 +23,11 @@ const feats = [
     ],
   },
   {
+    title: 'Mater Magic',
+    icon: 'agriculture',
+    description: 'Grow 100 tomatoes in a season.'
+  },
+  {
     title: '1,667 Words A Day',
     icon: 'chrome_reader_mode',
     description: [
