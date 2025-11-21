@@ -9,19 +9,19 @@ const Home = () =>
   <Page id='home'>
     <div id='bio' className='block wide'>
       <p>
-        Kenzie Bottoms is a feminist, anti-racist, artist, and
-        developer based in Nashville, the original homeland of the{' '}
+        Kenzie Bottoms is an artist and developer based in Nashville,
+        the original homeland of the{' '}
         <a
-          href='http://www.naiatn.org/support/naia-circle-of-life-donations/'
+          href='https://naiatn.org/'
           target='_blank'
           rel='no-referrer'
         >
           Cherokee, Chickasaw, Shawnee, and Yuchi tribal nations
         </a>.{' '}
         <Link to='/pronouns'>Their pronouns are he/they</Link> and they are
-        passionate about making all spaces, professional and otherwise, safe
-        and accessible for women, people of color, trans and nonbinary people,
-        disabled people, and neurodivergent people.
+        passionate about making more spaces safe and accessible to women,
+        people of color, trans and nonbinary people, disabled people, and
+        neurodivergent people.
       </p>
       <p>
         They jam with{' '}
@@ -40,7 +40,7 @@ const Home = () =>
         >
           R.I.P.ley
         </a>{' '}
-        (Rip for short). They are a full-stack Node.js{' '}
+        (Rip for short). They are a{' '}
         <a
           href='http://nashvillesoftwareschool.com/' 
           target='_blank'
@@ -48,8 +48,8 @@ const Home = () =>
         >
           Nashville Software School
         </a>{' '}
-        graduate, and they are currently helping schools support their teachers
-        and students at{' '}
+        graduate (cohort 23, Angular and Node.js), and they are currently
+        helping schools support their teachers and students at{' '}
         <a
           href='https://www.everydaylabs.com/'
           target='_blank'
