@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1af1063c.css",
+    "main.js": "/static/js/main.eb1f6b19.js",
+    "static/media/society6.png": "/static/media/society6.a74e846a36283374e256.png",
+    "static/media/visualstudiomarketplace.png": "/static/media/visualstudiomarketplace.13995d4ae5ce3996e2c0.png",
+    "static/media/github.svg": "/static/media/github.6e76b76258a339d5dcf61b419bba4299.svg",
+    "index.html": "/index.html",
+    "static/media/loading.svg": "/static/media/loading.51d344ca8ae59f94229e5d75fa9c6d6d.svg",
+    "static/media/zazzle.svg": "/static/media/zazzle.2225739763aab66c6618b7ec092a0701.svg",
+    "static/media/twitter.svg": "/static/media/twitter.605f429a26dc2e74e2e4d2bfda6ed943.svg",
+    "static/media/codepen.svg": "/static/media/codepen.48fe1518393962cc1ee90742b95cb357.svg",
+    "static/media/linkedin.svg": "/static/media/linkedin.694e7942c79a8752acd48e67071b17d7.svg",
+    "static/media/artstation.svg": "/static/media/artstation.6f60fe10c0023158f90e70927b49cb34.svg",
+    "static/media/email.svg": "/static/media/email.e554f7b0b9bc0105ecdde1af223a8136.svg",
+    "main.1af1063c.css.map": "/static/css/main.1af1063c.css.map",
+    "main.eb1f6b19.js.map": "/static/js/main.eb1f6b19.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1af1063c.css",
+    "static/js/main.eb1f6b19.js"
+  ]
+}
