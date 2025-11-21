@@ -13,7 +13,7 @@ const Art = () =>
         <strong>anything</strong>: sticker designs, Coke can sculptures,
         photorealistic pet portraits, tattoo designs, character sheets, or
         something even more adventurous.{' '}
-        <a href='mailto:kenziebottoms@gmail.com' target='blank'>
+        <a href='mailto:kenzie.ripley@pm.me' target='blank'>
           Email them!
         </a>
       </blockquote>

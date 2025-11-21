@@ -31,7 +31,7 @@ let images = {
 const links = [
   {
     name: 'Email',
-    href: 'mailto:kenziebottoms@gmail.com',
+    href: 'mailto:kenzie.ripley@pm.me',
   },
   {
     name: 'GitHub',
