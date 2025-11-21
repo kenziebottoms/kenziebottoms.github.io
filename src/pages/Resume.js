@@ -11,35 +11,43 @@ const Resume = () =>
     <div id='green-border' />
     <h1 className='lane-1'>Full-time</h1>
     <h1 className='lane-2'>Freelance</h1>
-    <div className='year'>2023</div>
+    <div className='year'>2025</div>
     <Job
-      classes='lane-1 length-2'
+      classes='lane-1 length-6'
       company='EveryDay Labs'
       jobTitle='React Developer'
       startDate='February 2022'
       description={[
-        'An accessible data visualization dashboard and search tool using GraphQL and Apollo.', 
-        'Strategy and documentation to standardize the front-end development of an application suite.',
-        'Internal tooling built with Appsmith.'
+        'Maintain and extend the flagship single-page web app for use internally and directly by school administrators using React and TypeScript.',
+        'Accessible data visualization dashboard using Apex Charts.',
+        'Student search tool with 15+ filter types of varying complexity.',
+        'Cache management and query optimization using GraphQL and Apollo.',
+        'Type-safe, validated, accessible, and secure user input with React Hook Form.',
+        'User-friendly rich text editing complete with image uploads using Tiptap.',
       ]}
       tech={[
         'Git',
         'React',
+        'TypeScript',
         'GraphQL & Apollo',
         'Jest',
         'Webpack',
-        'Tailwind',
+        'TailwindCSS',
         'AWS',
         'Terraform',
         'CircleCI',
-        'Appsmith'
+        'Tiptap',
+        'React Hook Form'
       ]}
     />
+    <div className='year'>2024</div>
+    <div className='year'>2023</div>
     <Job
-      classes='lane-2 length-5 align-self-center'
+      classes='lane-2 length-6 align-self-center'
       company='Galactic Polymath'
       jobTitle='React Developer'
       startDate='November 2020'
+      endDate='April 2023'
       description={[
         'A directory of modular lesson plans.', 'A responsive, SEO-supportive Next.js website.'
       ]}
