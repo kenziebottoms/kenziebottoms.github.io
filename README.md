@@ -1,7 +1,7 @@
-![](https://img.shields.io/badge/updated-4/11/23-green.svg)
+![](https://img.shields.io/badge/updated-11/20/25-green.svg)
 ![](https://img.shields.io/badge/react-v18.2.0-61DAFB.svg)
-![](https://img.shields.io/badge/npm-v9.5.0-C12026.svg)
-![](https://img.shields.io/badge/node-v18.15.0-006E00.svg)
+![](https://img.shields.io/badge/npm-v10.8.2-C12026.svg)
+![](https://img.shields.io/badge/node-v18.20.8-006E00.svg)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -17,16 +17,8 @@ npm start
 
 ## Deployment
 
+Shout out to [restimel](https://gist.github.com/restimel/5462cb170d7d2c5e8df8b57a18713e8f) for the sick deploy script.
+
 ```bash
-git checkout dev
 npm run deploy
-git checkout gh-pages
-cp -r build/* .
-rm -rf build
-git checkout dev CNAME
-git branch -D main
-git checkout -b main
-git add .
-git commit -m "deploy ${mm/dd/yy}"
-git push origin main --force
 ```
