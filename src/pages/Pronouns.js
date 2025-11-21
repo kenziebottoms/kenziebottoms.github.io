@@ -5,16 +5,17 @@ import Page from '../components/Page'
 const Pronouns = () => 
   <Page className='blog'>
     <div className='block'>
-      <h1>What does 'they/them' mean?</h1>
+      <h1>What does 'he/they' mean?</h1>
       <p>
-        In the context of blue being male and pink being female (which is itself
-        a very recent gender convention), I like to describe myself as green.
-        Neither end of the spectrum feels right and neither set of conventional
-        pronouns feel right.
+        If blue is masculine and pink is feminine (which is itself a recent
+        and non-universal gender convention), I'm green. Neither set of
+        conventional pronouns particularly fit, but green is more blue than
+        pink, and there are plenty of situations in which "he" is just easier
+        than "they."
       </p>
       <blockquote>
-        This is me asking you to use the pronouns "they," "them," and "theirs"
-        when you're talking about me.
+        This is me asking you to use the pronouns he/him or they/them when
+        you're talking about me.
       </blockquote>
       <p>For example:</p>
       <ul>
@@ -22,22 +23,22 @@ const Pronouns = () =>
           "<strong>They</strong> are at work right now."
         </li>
         <li>
-          "You can ask <strong>them</strong> if you have questions."
+          "You can ask <strong>him</strong> if you have questions."
         </li>
         <li>
           "<strong>Their</strong> hair is naturally brown."
         </li>
         <li>
-          "That idea was <strong>theirs</strong>."
+          "That idea was <strong>his</strong>."
         </li>
         <li>
           "They are too lazy to make <strong>themself</strong> dinner."
         </li>
       </ul>
       <p>
-        If you mess up, it's alright; you're not the only one. Correct yourself
-        and move on. If I correct you, that means you have made me feel safe
-        enough to advocate for myself; believe it or not, it's a compliment.
+        If you mess up, it's alright; correct yourself and move on.
+        If I correct you, that means I respect you and think you respect me
+        enough to advocate for myself. Thank you.
       </p>
     </div>
   </Page>
