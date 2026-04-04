@@ -11,9 +11,9 @@ const Resume = () =>
     <div id='green-border' />
     <h1 className='lane-1'>Full-time</h1>
     <h1 className='lane-2'>Freelance</h1>
-    <div className='year'>2025</div>
+    <div className='year'>2026</div>
     <Job
-      classes='lane-1 length-6'
+      classes='lane-1 length-8'
       company='EveryDay Labs'
       jobTitle='React Developer'
       startDate='February 2022'
@@ -40,6 +40,7 @@ const Resume = () =>
         'React Hook Form'
       ]}
     />
+    <div className='year'>2025</div>
     <div className='year'>2024</div>
     <div className='year'>2023</div>
     <Job
