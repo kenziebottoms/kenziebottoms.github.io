@@ -18,22 +18,25 @@ const Resume = () =>
       jobTitle='React Developer'
       startDate='February 2022'
       description={[
-        'Maintain and extend the flagship single-page web app for use internally and directly by school administrators using React and TypeScript.',
-        'Accessible data visualization dashboard using Apex Charts.',
-        'Student search tool with 15+ filter types of varying complexity.',
+        'Maintain and extend the flagship single-page web app using React and TypeScript.',
+        'Create and optimize production-ready automatic build pipeline using Git, CircleCI, Amazon ECR, Docker, and Nginx.',
+        'Colorblind-safe data visualization dashboard using Apex Charts.',
+        'Student search tool with 15+ individually configurable filter types.',
         'Cache management and query optimization using GraphQL and Apollo.',
         'Type-safe, validated, accessible, and secure user input with React Hook Form.',
-        'User-friendly rich text editing complete with image uploads using Tiptap.',
+        'User-friendly, validated rich text editing complete with image uploads using Tiptap.',
       ]}
       tech={[
         'Git',
         'React',
         'TypeScript',
-        'GraphQL & Apollo',
-        'Jest',
-        'Webpack',
-        'TailwindCSS',
+        'Docker',
         'AWS',
+        'GraphQL & Apollo',
+        'Webpack',
+        'Nginx',
+        'Jest',
+        'TailwindCSS',
         'Terraform',
         'CircleCI',
         'Tiptap',
@@ -76,8 +79,7 @@ const Resume = () =>
       tech={[
         'Git',
         'React',
-        'React Redux',
-        'Redux-Saga',
+        'Redux',
         'Jest',
         'Webpack',
         'SCSS',
