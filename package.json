@@ -38,6 +38,7 @@
   },
   "devDependencies": {
     "eslint-plugin-react": "^7.32.2",
+    "postcss-normalize": "^13.0.1",
     "sass": "^1.61.0"
   }
 }
