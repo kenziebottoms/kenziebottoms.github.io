@@ -9,16 +9,18 @@ const Home = () =>
   <Page id='home'>
     <div id='bio' className='block wide'>
       <p>
-        Kenzie Bottoms is an artist and web developer based in Nashville,
-        the original homeland of the{' '}
+        Kenzie Bottoms is an artist and front-end-leaning full-stack
+        web developer based in Tennessee, the original homeland of{' '}
         <a
           href='https://naiatn.org/'
           target='_blank'
           rel='no-referrer'
         >
-          Cherokee, Chickasaw, Shawnee, and Yuchi tribal nations
-        </a>.{' '}
-        <Link to='/pronouns'>Their pronouns are he/they</Link> and they are
+          many displaced, still unrecognized Native people
+        </a> including the Cherokee, Chickasaw, Shawnee, and Yuchi tribal
+        nations.
+
+        Their pronouns are <Link to='/pronouns'>they/he</Link> and they are
         passionate about making more spaces safe and accessible to women,
         people of color, trans and nonbinary people, disabled people, and
         neurodivergent people.
@@ -37,6 +39,7 @@ const Home = () =>
           href='https://en.wikipedia.org/wiki/Ellen_Ripley' 
           target='_blank'
           rel='no-referrer'
+          className='small-caps'
         >
           R.I.P.ley
         </a>{' '}
