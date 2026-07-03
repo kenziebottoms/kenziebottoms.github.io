@@ -11,7 +11,6 @@ import linkedin from '../img/linkedin.svg'
 import codepen from '../img/codepen.svg'
 import visualstudiomarketplace from '../img/visualstudiomarketplace.png'
 import artstation from '../img/artstation.svg'
-import society6 from '../img/society6.png'
 import artistsclients from '../img/artistsclients.png'
 import zazzle from '../img/zazzle.svg'
 
@@ -23,7 +22,6 @@ let images = {
   codepen,
   visualstudiomarketplace,
   artstation,
-  society6,
   artistsclients,
   zazzle,
 }
@@ -56,10 +54,6 @@ const links = [
   {
     name: 'Zazzle',
     href: 'https://www.zazzle.com/store/judgmentalgiraffe',
-  },
-  {
-    name: 'Society6',
-    href: 'https://society6.com/claquesous',
   },
 ]
 
