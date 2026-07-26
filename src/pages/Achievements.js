@@ -14,7 +14,6 @@ const Achievements = () =>
     >
       Win Most Valuable{' '}
       <a
-        key={1}
         href='https://en.wikipedia.org/wiki/Roller_derby#Basics_of_play'
         target='_blank'
         rel='noopener noreferrer'
@@ -79,7 +78,6 @@ const Achievements = () =>
     >
       Build a{' '}
       <a
-        key={1}
         href='https://en.wikipedia.org/wiki/Bioactive_terrarium'
         target='_blank'
         rel='noopener noreferrer'
@@ -137,7 +135,6 @@ const Achievements = () =>
     >
       Solve 25 problems on{' '}
       <a
-        key={1}
         href='https://projecteuler.net/about'
         target='_blank'
         rel='noopener noreferrer'
