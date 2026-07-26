@@ -15,7 +15,7 @@ const Resume = () =>
     <Job
       classes='lane-1 length-8'
       company='EveryDay Labs'
-      jobTitle='React Developer'
+      jobTitle='Lead React Developer'
       startDate='February 2022'
       description={[
         'Maintain and extend the flagship single-page web app using React and TypeScript.',
@@ -67,7 +67,7 @@ const Resume = () =>
     <Job
       classes='lane-1 length-3'
       company='Celero Commerce'
-      jobTitle='React Developer'
+      jobTitle='Lead React Developer'
       startDate='June 2020'
       endDate='February 2022'
       description={[
