@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Feat = ({ icon, title, description }) => 
+const Feat = ({ icon, title, children }) => 
   <div className='achievement'>
     <i className='material-icons'>{icon}</i>
     <div>
       <h3>{title}</h3>
-      <p>{description}</p>
+      {children}
     </div>
   </div>
 
