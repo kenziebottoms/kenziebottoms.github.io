@@ -1,12 +1,12 @@
 import RESTDB from '../keys'
 
 const allArtPosts = () =>
-  fetch(`${RESTDB.url}/artsy?apikey=${RESTDB.key}&sort=date&dir=-1`).then(
+  fetch(`${RESTDB.url}/artsy?apikey=${RESTDB.key}&sort=created_at&dir=-1`).then(
     response => response.json()
   )
 
 const allCodePosts = () =>
-  fetch(`${RESTDB.url}/code?apikey=${RESTDB.key}&sort=date&dir=-1`).then(
+  fetch(`${RESTDB.url}/code?apikey=${RESTDB.key}&sort=created_at&dir=-1`).then(
     response => response.json()
   )
 

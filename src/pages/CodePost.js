@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 
 import Page from '../components/Page'
 import LoadingIcon from '../elements/LoadingIcon'
-import DateTag from '../elements/DateTag'
 import CodePen from '../components/CodePen'
 import SanitizedHtml from '../components/SanitizedHtml'
 import Script from '../elements/Script'
@@ -53,13 +52,9 @@ const CodePost = () => {
           }
           <div className='caption'>
             <h3>{post.title}</h3>
-            {post.date != null &&
-              post.created_at == null &&
-              <DateTag date={post.date} />}
-            {post.created_at != null &&
-              <p className='date'>
-                {displayIsoDateString(post.created_at)}
-              </p>}
+            <p className='date'>
+              {displayIsoDateString(post.created_at)}
+            </p>
             <div className='body'>
               <SanitizedHtml html={post.body} />
             </div>
