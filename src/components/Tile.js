@@ -43,6 +43,9 @@ const Tile = ({
           {post.created_at != null &&
             <div className='date'>{displayIsoDateString(post.created_at)}</div>}
         </div>
+        <div className='click-border'>
+          <i className='material-icons'>chevron_right</i>
+        </div>
       </Link>
     </div>
   )
