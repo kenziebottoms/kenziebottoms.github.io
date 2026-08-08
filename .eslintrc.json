@@ -17,7 +17,7 @@
     "brace-style": ["error", "1tbs"],
     "comma-dangle": ["error", "only-multiline"],
     "comma-spacing": ["error", { "before": false, "after": true }],
-    "eqeqeq": "error",
+    "eqeqeq": ["error", "always", {"null": "ignore"}],
     "indent": ["error", 2],
     "jsx-quotes": ["error", "prefer-single"],
     "key-spacing": ["error", { "mode": "strict" }],
