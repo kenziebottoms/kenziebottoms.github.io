@@ -2,6 +2,8 @@ import React from 'react'
 import { useLocation } from 'react-router'
 import { Link } from 'react-router-dom'
 
+import { displayIsoDateString } from '../services/dates'
+
 import '../styles/components/Tile.scss'
 
 function formatDate(epoch) {
@@ -36,7 +38,10 @@ const Tile = ({
       <Link to={pathname + '/' + post._id}>
         <div className='overlay'>
           <h3>{post.title}</h3>
-          <div className='date'>{formatDate(post.date * 1000)}</div>
+          {post.date != null && post.created_at == null &&
+            <div className='date'>{formatDate(post.date * 1000)}</div>}
+          {post.created_at != null &&
+            <div className='date'>{displayIsoDateString(post.created_at)}</div>}
         </div>
       </Link>
     </div>

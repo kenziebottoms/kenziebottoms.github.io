@@ -9,12 +9,13 @@ import DateTag from '../elements/DateTag'
 
 import '../styles/pages/Post.scss'
 
+import { displayIsoDateString } from '../services/dates'
 import restDB from '../services/restDB'
 
 const ArtPost = () => {
   const { hash } = useParams()
   const [post, setPost] = useState(null)
-  useEffect(() =>{
+  useEffect(() => {
     restDB
       .artPost(hash)
       .then(json => {
@@ -29,14 +30,20 @@ const ArtPost = () => {
     <Page id='post' className='art'>
       <Link className='back' to='/art'>
         <i className='material-icons'>chevron_left</i>
-          Back to art
+        Back to art
       </Link>
-      {post ?  
+      {post ?
         <Fragment>
           <img src={post.image} alt={post.title} />
           <div className='caption'>
             <h3>{post.title}</h3>
-            <DateTag date={post.date} />
+            {post.date != null &&
+              post.created_at == null &&
+              <DateTag date={post.date} />}
+            {post.created_at != null &&
+              <p className='date'>
+                {displayIsoDateString(post.created_at)}
+              </p>}
             <SanitizedHtml html={post.body} />
           </div>
         </Fragment> :
