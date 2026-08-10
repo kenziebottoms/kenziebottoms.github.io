@@ -67,12 +67,16 @@ const CodePost = () => {
                 </p>
             }
             {post.github && 
-                <p className='github'>
-                  <img src={githubLogo} alt='GitHub' />
+                <div className='flex flex-row gap-2'>
+                  <img
+                    src={githubLogo}
+                    alt='GitHub'
+                    className='h-6 w-6'
+                  />
                   <a href={post.github} target='blank'>
                     {post.github}
                   </a>
-                </p>
+                </div>
             }
           </div>
         </Fragment> : 

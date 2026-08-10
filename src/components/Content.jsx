@@ -14,8 +14,10 @@ import Achievements from '../pages/Achievements'
 import Links from '../pages/Links'
 import JsDocTypes from '../pages/JsDocTypes'
 
-const Content = () => 
-  <section id='content'>
+const Content = ({
+  className = ''
+}) => 
+  <section id='content' className={`${className} p-4 xl:p-8 h-full w-full`}>
     <Routes>
       <Route
         exact path='/'

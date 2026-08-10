@@ -123,3 +123,14 @@ strong {
 .small-caps {
     font-variant-caps: small-caps;
 }
+
+#home i {
+    font-size: 2.5em !important;
+}
+
+a#copyright {
+    color: $gray-hhl;
+    i {
+        font-size: 1rem !important;
+    }
+}

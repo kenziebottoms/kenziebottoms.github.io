@@ -1,7 +1,7 @@
 @import '../colors';
 @import '../breakpoints';
 
-#achievements {
+#achievements > .grow {
     @media (min-width: $sm-md) {
         grid-template-columns: 1fr 1fr;
         display: grid;

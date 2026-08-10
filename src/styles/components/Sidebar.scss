@@ -105,6 +105,7 @@
             &[href='/'] {
                 background: $green;
                 svg {
+                    margin: auto;
                     path[fill='#000'] {
                         fill: $black;
                     }
