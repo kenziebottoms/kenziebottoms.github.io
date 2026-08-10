@@ -26,7 +26,7 @@ const CodePost = () => {
   }, [])
 
   return (
-    <Page id='post' className='code'>
+    <Page id='post' className='h-full'>
       <Link className='back' to='/code'>
         <i className='material-icons'>chevron_left</i>
           Back to code

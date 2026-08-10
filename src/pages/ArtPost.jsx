@@ -26,7 +26,7 @@ const ArtPost = () => {
   }, [])
 
   return (
-    <Page id='post' className='art'>
+    <Page id='post' className='art h-full'>
       <Link className='back' to='/art'>
         <i className='material-icons'>chevron_left</i>
         Back to art
