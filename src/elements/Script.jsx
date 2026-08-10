@@ -10,7 +10,7 @@ class Script extends React.Component {
     document.getElementById(this.props.id).appendChild(script)
   }
   render() {
-    return <div className='script' id={this.props.id} />
+    return <div className='script hidden' id={this.props.id} />
   }
 }
 
