@@ -1,12 +1,10 @@
-import React, { Fragment, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router'
-import { Link } from 'react-router-dom'
 
+import Button from '../components/Button'
 import Page from '../components/Page'
 import SanitizedHtml from '../components/SanitizedHtml'
 import LoadingIcon from '../elements/LoadingIcon'
-
-import '../styles/pages/Post.scss'
 
 import { displayIsoDateString } from '../services/dates'
 import restDB from '../services/restDB'
@@ -26,22 +24,29 @@ const ArtPost = () => {
   }, [])
 
   return (
-    <Page id='post' className='art min-h-full'>
-      <Link className='back' to='/art'>
-        <i className='material-icons'>chevron_left</i>
+    <Page className='min-h-full'>
+      <Button
+        to='/art'
+        icon='chevron_left'
+        className='mb-2'
+      >
         Back to art
-      </Link>
+      </Button>
       {post ?
-        <Fragment>
-          <img src={post.image} alt={post.title} />
-          <div className='caption'>
-            <h3>{post.title}</h3>
-            <p className='date'>
+        <div className='grow flex flex-col md:flex-row gap-4'>
+          <img
+            className='md:w-1/2'
+            src={post.image}
+            alt={post.title}
+          />
+          <div className='flex flex-col gap-2'>
+            <h3 className='font-semibold text-lg'>{post.title}</h3>
+            <p className='opacity-60'>
               {displayIsoDateString(post.created_at)}
             </p>
             <SanitizedHtml html={post.body} />
           </div>
-        </Fragment> :
+        </div> :
         <LoadingIcon />}
     </Page>
   )

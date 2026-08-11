@@ -129,6 +129,9 @@ strong {
 }
 
 i.material-icons {
+    &.text-lg {
+        font-size: 1.125rem !important;
+    }
     &.text-2xl {
         font-size: 1.5rem !important;
     }
