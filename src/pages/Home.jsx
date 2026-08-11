@@ -88,7 +88,7 @@ const Home = () =>
             to={link}
             className='w-1/3 p-4 grow flex flex-col gap-2 items-center justify-center bg-white dark:bg-black-hl'
           >
-            <i className='material-icons text-black-hl dark:text-white'>
+            <i className='material-icons text-4xl text-black-hl dark:text-white'>
               {icon}
             </i>
             {label}

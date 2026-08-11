@@ -124,10 +124,6 @@ strong {
     font-variant-caps: small-caps;
 }
 
-#home i {
-    font-size: 2.5em !important;
-}
-
 #loading {
     text-align: center;
     grid-column: 1 / -1;
@@ -146,6 +142,9 @@ i.material-icons {
     }
     &.text-3xl {
         font-size: 1.875rem !important;
+    }
+    &.text-4xl {
+        font-size: 2.25rem !important;
     }
 }
 
