@@ -128,6 +128,15 @@ strong {
     font-size: 2.5em !important;
 }
 
+#loading {
+    text-align: center;
+    grid-column: 1 / -1;
+    margin: auto;
+    display: block;
+    width: 4rem;
+    height: 4rem;
+}
+
 i.material-icons {
     &.text-lg {
         font-size: 1.125rem !important;
