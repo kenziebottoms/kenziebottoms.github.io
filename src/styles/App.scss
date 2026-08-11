@@ -128,6 +128,12 @@ strong {
     font-size: 2.5em !important;
 }
 
+i.material-icons {
+    &.text-2xl {
+        font-size: 1.5rem !important;
+    }
+}
+
 a#copyright {
     color: $gray-hhl;
     i {

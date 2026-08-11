@@ -4,50 +4,25 @@ import { Link } from 'react-router-dom'
 
 import { displayIsoDateString } from '../services/dates'
 
-import '../styles/components/Tile.scss'
-
-function formatDate(epoch) {
-  const months = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December',
-  ]
-  let d = new Date(epoch)
-  return `${months[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`
-}
-
 const Tile = ({
   post,
 }) => {
   const { pathname } = useLocation()
   return (
-    <div
-      className='tile'
+    <Link
       key={post._id}
+      to={pathname + '/' + post._id} 
+      className='bg-cover bg-center flex flex-row grayscale-75 hover:grayscale-0'
       style={{ backgroundImage: `url(${post.thumbnail})` }}
     >
-      <Link to={pathname + '/' + post._id}>
-        <div className='overlay'>
-          <h3>{post.title}</h3>
-          {post.date != null && post.created_at == null &&
-            <div className='date'>{formatDate(post.date * 1000)}</div>}
-          {post.created_at != null &&
-            <div className='date'>{displayIsoDateString(post.created_at)}</div>}
-        </div>
-        <div className='click-border'>
-          <i className='material-icons'>chevron_right</i>
-        </div>
-      </Link>
-    </div>
+      <div className='transition-all duration-100 ease-in-out bg-black/75 hover:bg-black/60 p-4 flex flex-col justify-center items-end text-right gap-2 grow'>
+        <h3 className='text-2xl font-semibold text-white leading-7'>{post.title}</h3>
+        <div className='text-white/75'>{displayIsoDateString(post.created_at)}</div>
+      </div>
+      <div className='bg-green text-black flex flex-row items-center'>
+        <i className='material-icons text-2xl'>chevron_right</i>
+      </div>
+    </Link>
   )
 }
 
