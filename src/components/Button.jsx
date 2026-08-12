@@ -16,10 +16,10 @@ const Button = ({
     <Element
       type={Element === 'button' ? 'button' : undefined}
       to={to}
-      className={`${className} group border-2 bg-white dark:bg-black inline-flex items-center gap-2 pr-2`}
+      className={`${className} group bg-white dark:bg-white inline-flex items-center`}
     >
-      {icon != null && <i className='material-icons text-lg bg-green-ll dark:bg-green group-hover:bg-green dark:group-hover:bg-green-ll p-1 text-white dark:text-black'>{icon}</i>}
-      {children}
+      {icon != null && <i className='material-icons text-xl bg-green-ll dark:bg-green group-hover:bg-green dark:group-hover:bg-green-ll p-1 text-white dark:text-black-hl'>{icon}</i>}
+      <div className='px-2 dark:text-green-ll'>{children}</div>
     </Element>
   )
 }
