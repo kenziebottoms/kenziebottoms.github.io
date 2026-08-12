@@ -1,18 +1,22 @@
 import React from 'react'
 
-import TechList from '../elements/TechList'
-import JobDescription from '../elements/JobDescription'
-
-const Job = props => 
-  <article className={props.classes || ''}>
-    <h3>{props.company}</h3>
-    <h4>{props.jobTitle}</h4>
-    <p className='date'>
-      {props.startDate}{' — '}{props.endDate || 'present'}
+const Job = (props) => 
+  <article className={`${props.classes} p-4 bg-white dark:bg-black-hl space-y-4`}>
+    <div>
+      <h3 className='text-lg font-bold'>{props.company}</h3>
+      <h4 className='text-md font-semibold opacity-60'>{props.jobTitle}</h4>
+    </div>
+    <p>
+      {props.startDate}{' — '}{props.endDate || 'present'}
     </p>
-    <JobDescription description={props.description} />
-    <TechList tech={props.tech} />
+    <ul className='text-sm ml-4 list-disc'>
+      {props.description.map((li, i) => <li key={i}>{li}</li>)}
+    </ul>
+    <div className='mt-4 flex flex-row flex-wrap gap-2'>
+      {props.tech.map((tech, i) => 
+        <div key={i} className='text-xs font-light inline-block py-1 px-2 bg-neutral-200/75 dark:bg-neutral-600'>{tech}</div>
+      )}
+    </div>
   </article>
-
 
 export default Job

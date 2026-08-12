@@ -7,43 +7,6 @@
     h1 {
         display: none;
     }
-    article {
-        background: $bg-hhl;
-        padding: 1rem;
-        display: block;
-        margin-bottom: 1rem;
-        h3 {
-            font-size: 1.15rem;
-        }
-        h3,
-        h4 {
-            margin-top: 0;
-            margin-bottom: 0.35rem;
-            font-weight: bold;
-        }
-        h4 {
-            font-size: 1rem;
-            color: rgba($gray, 0.8);
-        }
-        ul {
-            margin: 1rem 0;
-            list-style-type: disc;
-            padding-left: 1.25rem;
-            li {
-                font-size: 0.9rem;
-            }
-        }
-        .tech {
-            font-weight: 100;
-            .tag {
-                margin: 0.5rem 0.5rem 0 0;
-                display: inline-block;
-                padding: 0.25rem 0.5rem;
-                background: rgba($bg, 0.8);
-                font-size: 0.8rem;
-            }
-        }
-    }
     @media (min-width: $md-lg) {
         display: grid;
         grid-template-columns: auto 0.5rem 1fr 1fr;
@@ -115,17 +78,6 @@
 }
 
 .dark #resume {
-    article {
-        background: $black;
-
-        h4 {
-            color: rgba($white, 0.5);
-        }
-        
-        .tech .tag {
-            background: rgba($gray, 0.6);
-        }
-    }
     .year {
         color: rgba($white, 0.5);
     }
