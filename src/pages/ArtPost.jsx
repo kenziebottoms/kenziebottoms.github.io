@@ -24,11 +24,11 @@ const ArtPost = () => {
   }, [])
 
   return (
-    <Page className='min-h-full'>
+    <Page>
       <Button
         to='/art'
         icon='chevron_left'
-        className='mb-2'
+        className='mb-4'
       >
         Back to art
       </Button>

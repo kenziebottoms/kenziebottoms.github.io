@@ -24,11 +24,11 @@ const CodePost = () => {
   }, [])
 
   return (
-    <Page id='post' className='min-h-full'>
+    <Page id='post'>
       <Button
         to='/code'
         icon='chevron_left'
-        className='mb-2'
+        className='mb-4'
       >
         Back to code
       </Button>

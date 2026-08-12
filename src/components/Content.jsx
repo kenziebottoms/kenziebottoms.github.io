@@ -13,7 +13,7 @@ import Links from '../pages/Links'
 import JsDocTypes from '../pages/JsDocTypes'
 
 const Content = () => 
-  <section id='content' className='p-4 h-full w-full bg-white dark:bg-black overflow-y-auto'>
+  <section className='p-4 h-full w-full bg-neural-50 dark:bg-black overflow-y-auto'>
     <Routes>
       <Route
         exact path='/'

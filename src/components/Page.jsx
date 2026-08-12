@@ -5,7 +5,7 @@ const Page = ({
   className = '',
   children
 }) => 
-  <div id={id} className={`${className} grow flex flex-col gap-4`}>
+  <div id={id} className={`${className} min-h-full flex flex-col gap-4`}>
     <div className='grow'>
       {children}
     </div>
