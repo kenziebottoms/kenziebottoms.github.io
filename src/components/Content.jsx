@@ -1,8 +1,6 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 
-import '../styles/components/Content.scss'
-
 import Home from '../pages/Home'
 import Art from '../pages/Art'
 import ArtPost from '../pages/ArtPost'
@@ -14,10 +12,8 @@ import Achievements from '../pages/Achievements'
 import Links from '../pages/Links'
 import JsDocTypes from '../pages/JsDocTypes'
 
-const Content = ({
-  className = ''
-}) => 
-  <section id='content' className={`${className} p-4 xl:p-8 h-full w-full`}>
+const Content = () => 
+  <section id='content' className='p-4 h-full w-full'>
     <Routes>
       <Route
         exact path='/'
