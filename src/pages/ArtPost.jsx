@@ -28,14 +28,14 @@ const ArtPost = () => {
       <Button
         to='/art'
         icon='chevron_left'
-        className='mb-4'
+        className='self-start'
       >
         Back to art
       </Button>
       {post ?
         <div className='grow flex flex-col md:flex-row gap-4'>
           <img
-            className='md:w-1/2'
+            className='md:w-1/2 max-h-100 self-start'
             src={post.image}
             alt={post.title}
           />

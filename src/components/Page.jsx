@@ -6,9 +6,7 @@ const Page = ({
   children
 }) => 
   <div id={id} className={`${className} min-h-full flex flex-col gap-4`}>
-    <div className='grow'>
-      {children}
-    </div>
+    {children}
     <a
       id='copyright'
       href='https://github.com/kenziebottoms/kenziebottoms.github.io'

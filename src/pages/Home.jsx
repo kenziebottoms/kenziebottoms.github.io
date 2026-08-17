@@ -5,7 +5,7 @@ import Page from '../components/Page'
 
 const Home = () =>
   <Page id='home' className='lg:p-4'>
-    <div className='grid grid-cols-1 md:grid-cols-2 gap-4 h-full grow'>
+    <div className='grow grid grid-cols-1 md:grid-cols-2 gap-4 h-full'>
       <div className='p-4 flex flex-col gap-4 justify-center bg-white dark:bg-black-hl'>
         <p>
           Kenzie Bottoms is an artist and front-end-leaning full-stack

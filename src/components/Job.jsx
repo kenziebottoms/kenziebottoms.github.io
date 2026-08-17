@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Job = (props) => 
-  <article className={`${props.classes} p-4 bg-white dark:bg-black-hl space-y-4`}>
+  <article className={`${props.classes} p-4 mb-4 bg-white dark:bg-black-hl space-y-4`}>
     <div>
       <h3 className='text-lg font-bold'>{props.company}</h3>
       <h4 className='text-md font-semibold opacity-60'>{props.jobTitle}</h4>

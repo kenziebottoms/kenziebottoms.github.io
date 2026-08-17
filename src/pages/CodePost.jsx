@@ -28,7 +28,7 @@ const CodePost = () => {
       <Button
         to='/code'
         icon='chevron_left'
-        className='mb-4'
+        className='self-start'
       >
         Back to code
       </Button>
@@ -43,7 +43,7 @@ const CodePost = () => {
             <React.Fragment>
               {post.script ? <Script async={true} src={post.script} /> :
                 <img
-                  className='md:w-1/2'
+                  className='md:w-1/2 max-h-100 self-start'
                   src={post.image}
                   alt={post.title + ' '}
                 />}
