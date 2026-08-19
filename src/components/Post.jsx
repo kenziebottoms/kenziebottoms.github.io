@@ -41,7 +41,7 @@ const Post = ({
               <LinkBadge
                 link={post.link}
                 image={
-                  <i className='material-icons text-3xl text-neutral-700 dark:text-neutral-300'>link</i>
+                  <i className='material-icons text-2xl text-neutral-300 dark:text-neutral-700'>link</i>
                 }
               />
             }
@@ -51,7 +51,7 @@ const Post = ({
                 <img
                   src={githubLogo}
                   alt='GitHub'
-                  className='h-6 w-6 dark:invert'
+                  className='h-6 w-6 p-1 invert dark:invert-0'
                 />
               }
             />}

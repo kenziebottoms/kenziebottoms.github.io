@@ -8,10 +8,12 @@ const LinkBadge = ({
     href={link}
     target='_blank'
     rel='noopener noreferrer'
-    className='flex flex-row gap-2 items-center max-w-full text-sm'
+    className='group inline-flex self-start flex-row gap-1 items-center max-w-full text-sm bg-white'
   >
-    {image}
-    <div className='truncate'>
+    <div className='p-1 shrink-0 grow-0 bg-black-hl group-hover:bg-black-hl/85 dark:bg-neutral-300 dark:group-hover:bg-neutral-200'>
+      {image}
+    </div>
+    <div className='truncate p-1 pr-2 dark:text-green-ll dark:group-hover:text-green'>
       {link}
     </div>
   </a>
