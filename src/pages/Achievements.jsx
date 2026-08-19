@@ -40,19 +40,6 @@ const Achievements = () =>
         </a>.
       </Feat>
       <Feat
-        title='1,667 Words A Day'
-        icon='chrome_reader_mode'
-      >
-        Beat{' '}
-        <a
-          href='https://nanowrimo.org/about'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          NaNoWriMo
-        </a>.
-      </Feat>
-      <Feat
         title='Color Coded'
         icon='brush'
       >
