@@ -3,6 +3,7 @@ import React from 'react'
 import Page from '../components/Page'
 import CodePen from '../components/CodePen'
 import SanitizedHtml from '../components/SanitizedHtml'
+import LinkBadge from '../elements/LinkBadge'
 import LoadingIcon from '../elements/LoadingIcon'
 import githubLogo from '../img/github.svg'
 
@@ -17,7 +18,7 @@ const Post = ({
       {backButton}
       {!post && <LoadingIcon />}
       {post &&
-        <div className='grow flex flex-col md:flex-row gap-4'>
+        <div className='grow flex flex-col md:grid md:grid-cols-2 gap-4'>
           {post.codepen ?
             <CodePen
               title={post.title}
@@ -26,36 +27,34 @@ const Post = ({
             (post.script ?
               <Script async={true} src={post.script} /> :
               <img
-                className='md:w-1/2 max-h-100 self-start'
+                className='w-full h-auto max-h-100 self-start'
                 src={post.image}
                 alt={post.title + ' '}
               />)}
-          <div className='flex flex-col gap-2'>
+          <div className='grow flex flex-col gap-2'>
             <h3 className='font-semibold text-lg'>{post.title}</h3>
             <p className='opacity-60'>
               {displayIsoDateString(post.created_at)}
             </p>
             <SanitizedHtml html={post.body} />
             {post.link &&
-              <p className='link'>
-                <i className='material-icons'>link</i>
-                <a href={post.link} target='blank'>
-                  {post.link}
-                </a>
-              </p>
+              <LinkBadge
+                link={post.link}
+                image={
+                  <i className='material-icons text-3xl text-neutral-700 dark:text-neutral-300'>link</i>
+                }
+              />
             }
-            {post.github &&
-              <div className='flex flex-row gap-2'>
+            {post.github && <LinkBadge
+              link={post.github}
+              image={
                 <img
                   src={githubLogo}
                   alt='GitHub'
                   className='h-6 w-6 dark:invert'
                 />
-                <a href={post.github} target='blank'>
-                  {post.github}
-                </a>
-              </div>
-            }
+              }
+            />}
           </div>
         </div>}
     </Page>
