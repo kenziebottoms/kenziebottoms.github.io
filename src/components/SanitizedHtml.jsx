@@ -12,7 +12,11 @@ const sanitize = (dirty) => ({
 })
 
 const SanitizedHtml = ({ html }) => {
-  return <div dangerouslySetInnerHTML={sanitize(html)} />
+  return <div
+    dangerouslySetInnerHTML={
+      sanitize(html.replace('<a ', '<a target=\'_blank\' rel=\'noopener noreferrer\' '))
+    } 
+  />
 }
 
 export default SanitizedHtml
