@@ -2,11 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router'
 
 import Button from '../components/Button'
-import Page from '../components/Page'
-import SanitizedHtml from '../components/SanitizedHtml'
-import LoadingIcon from '../elements/LoadingIcon'
+import Post from '../components/Post'
 
-import { displayIsoDateString } from '../services/dates'
 import restDB from '../services/restDB'
 
 const ArtPost = () => {
@@ -15,40 +12,22 @@ const ArtPost = () => {
   useEffect(() => {
     restDB
       .artPost(hash)
-      .then(json => {
-        // make all links open in new tabs
-        json.body = json.body
-          .replace('<a ', '<a target=\'_blank\' rel=\'noopener noreferrer\' ')
-        setPost(json)
-      })
+      .then(setPost)
   }, [])
 
   return (
-    <Page>
-      <Button
-        to='/art'
-        icon='chevron_left'
-        className='self-start'
-      >
-        Back to art
-      </Button>
-      {post ?
-        <div className='grow flex flex-col md:flex-row gap-4'>
-          <img
-            className='md:w-1/2 max-h-100 self-start'
-            src={post.image}
-            alt={post.title}
-          />
-          <div className='flex flex-col gap-2'>
-            <h3 className='font-semibold text-lg'>{post.title}</h3>
-            <p className='opacity-60'>
-              {displayIsoDateString(post.created_at)}
-            </p>
-            <SanitizedHtml html={post.body} />
-          </div>
-        </div> :
-        <LoadingIcon />}
-    </Page>
+    <Post
+      post={post}
+      backButton={
+        <Button
+          to='/art'
+          icon='chevron_left'
+          className='self-start'
+        >
+          Back to art
+        </Button>
+      }
+    />
   )
 }
 
