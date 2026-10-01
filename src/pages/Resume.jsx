@@ -19,13 +19,17 @@ const Resume = () =>
         jobTitle='Lead React Developer'
         startDate='February 2022'
         description={[
-          'Maintain and extend the flagship single-page web app using React and TypeScript.',
-          'Create and optimize production-ready automatic build pipeline using Git, CircleCI, Amazon ECR, Docker, and Nginx.',
+          'Full ownership of all front-end development including planning, implementation, testing, and support of client-facing features for flagship attendance and communications platform using React and TypeScript.',
+          'Reusable custom input components for use with React Hook Form that provide type safety, validation, and keyboard accessibility.',
+          'An email and PDF builder made with Tiptap, complete with text styling, links, lists, pre-built content blocks, image uploads, and QR code insertion.',
+          'Incremental conversion of JavaScript React codebase into TypeScript.',
+          'Student search tool with 20+ individually configurable filter types using type-safe generics.',
+          'Cache management using GraphQL and Apollo, favoring direct cache updates over refetching.',
+          'Automatic build-and-test CI/CD pipeline using Docker, AWS (ECR), and CircleCI.',
+          'Controlled feature rollouts and feature targeting using LaunchDarkly\'s feature flags.',
+          'Bug triage and resolution using DataDog\'s session recordings and error aggregation.',
+          'Integration with Auth0 and FrontEgg for multi-tenant user account management, JWT authentication, and single sign-on.',
           'Colorblind-safe data visualization dashboard using Apex Charts.',
-          'Student search tool with 15+ individually configurable filter types.',
-          'Cache management and query optimization using GraphQL and Apollo.',
-          'Type-safe, validated, accessible, and secure user input with React Hook Form.',
-          'User-friendly, validated rich text editing complete with image uploads using Tiptap.',
         ]}
         tech={[
           'Git',
@@ -54,7 +58,8 @@ const Resume = () =>
         startDate='November 2020'
         endDate='April 2023'
         description={[
-          'A directory of modular lesson plans.', 'A responsive, SEO-supportive Next.js website.'
+          'A directory of modular lesson plans.',
+          'A responsive, SEO-supportive Next.js website.'
         ]}
         tech={[
           'Git',
@@ -72,10 +77,11 @@ const Resume = () =>
         startDate='June 2020'
         endDate='February 2022'
         description={[
-          'A customer management dashboard and scheduling using Redux and Redux-Saga.',
-          'A dynamic customer experience based on many persistent user-defined settings.',
-          'Automated testing for components and business logic.',
-          'Establishment and documentation of new best practices for a large legacy codebase.',
+          'Feature development and maintenance of customer management dashboard built in React.',
+          'Asynchronous, event-driven state management with Redux and Redux-Saga.',
+          'Drag-and-drop scheduling tools for managing multiple fieldworkers.',
+          'Incremental continuous improvement of a large legacy codebase in active development, including strategic migration away from unreliable dependencies.',
+          'Automated tests using Jest for components and business logic.',
         ]}
         tech={[
           'Git',
@@ -95,12 +101,12 @@ const Resume = () =>
         startDate='July 2018'
         endDate='June 2020'
         description={[
-          'Dynamic single-page React app built on a Node.js API, featuring sortable dynamic data tables and form-driven data input.',
-          'Dynamic single-page Vue.js app built on an Elixir/Phoenix API.',
-          'Responsive, interactive custom WordPress themes using jQuery, Bootstrap, and SCSS, featuring secondary custom user dashboard functionality.',
-          'Interactive, filterable map views on an Elixir/Phoenix app using Leaflet and React.',
-          'AWS S3 file storage and SendGrid email integration with an Elixir/Phoenix app.',
+          'Searchable student directory built in React on a Node.js API featuring sortable tables, form-driven data entry, and report generation.',
+          'Custom reusable responsive WordPress themes using jQuery, Bootstrap, and SCSS.',
+          'Interactive, filterable map app with AWS S3 file storage and SendGrid email integrations built in Leaflet and React on an Elixir/Phoenix API.',
+          'Music directory app built in Vue.js on an Elixir/Phoenix API.',
           'Automated testing, QA processes, and bug fixes for large legacy Java codebase.',
+          'Balancing the needs and priorities of multiple simultaneous projects in an agency environment.',
         ]}
         tech={[
           'Git',
@@ -115,7 +121,6 @@ const Resume = () =>
           'SendGrid',
           'SCSS',
           'Java',
-          'JUnit',
         ]}
       />
       <div className='placeholder lane-2' />
@@ -144,6 +149,7 @@ const Resume = () =>
           'HTML',
           'SCSS',
           'jQuery',
+          'JavaScript',
           'WordPress',
           'PHP',
         ]}
@@ -186,10 +192,13 @@ const Resume = () =>
         description={[
           'Design and implementation of custom archive pages.', 'Optimization, modification, and maintenance of a custom WordPress theme.',
         ]}
-        tech={['HTML',
+        tech={[
+          'HTML',
           'jQuery',
+          'JavaScript',
           'WordPress',
-          'PHP']}
+          'PHP'
+        ]}
       />
       <div className='year'>2018</div>
       <Job
@@ -203,23 +212,23 @@ const Resume = () =>
         ]}
         tech={['HTML',
           'jQuery',
+          'JavaScript',
           'SCSS',
           'WordPress',
           'PHP']}
       />
 
       <Job
-        classes='lane-1 length-2'
+        classes='lane-1 length-3'
         company='G/O Digital'
-        jobTitle='Web Development Maintenance Specialist'
-        startDate='September 2016'
+        jobTitle='Web Maintenance Specialist'
+        startDate='January 2016'
         endDate='April 2017'
         description={[
-          'Responsive custom WordPress themes using HTML, SCSS, and JavaScript.',
-          'Organization and facilitation of inter-server migration of 100+ sites.',
-          'Direct customer correspondence regarding site maintenance and updates.',
-          'Maintenance, repair, and modification of custom WordPress themes.',
-          'Server organization and maintenance using Python scripting.',
+          'Implementation and maintenance of custom responsive WordPress themes using HTML, SCSS, and JavaScript.',
+          'Management, organization, and facilitation of inter-server migration of 100+ WordPress sites using Python scripting.',
+          'DNS and domain name configuration, troubleshooting, and management for 100+ sites.',
+          'Service-minded customer correspondence regarding content management.',
         ]}
         tech={[
           'Python',
@@ -233,25 +242,6 @@ const Resume = () =>
         ]}
       />
       <div className='year'>2017</div>
-      <Job
-        classes='lane-1 length-1'
-        company='G/O Digital'
-        jobTitle='Web Development Associate'
-        startDate='January 2016'
-        endDate='September 2016'
-        description={[
-          'Maintenance, repair, and modification of custom WordPress themes.',
-        ]}
-        tech={[
-          'HTML',
-          'jQuery',
-          'SCSS',
-          'WordPress',
-          'PHP',
-          'ExpressionEngine',
-          'Git',
-        ]}
-      />
       <div className='year'>2016</div>
       <Job
         classes='lane-1 length-2'
