@@ -25,7 +25,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://kenzie.ink/kenziebottoms.github.io/",
+  "homepage": "https://kenzie.ink",
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",
     "@vitejs/plugin-react-swc": "^4.3.3",
